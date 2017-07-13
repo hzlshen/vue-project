@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Web app</title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+</head>
+<body>
+<div data-role="page" id="index">
+    <div data-role="header" data-position="fixed">
+       <h1>手机归属地查询</h1>
+    </div>
+    <div role="main" class="ui-content">
+         <!--表单输入-->
+        <div class="ui-field-contain">
+            <label>手机号：</label>
+            <input type="text" id="tel" placeholder="请输入合法手机号..."/>
+        </div>
+        <input type="button" value="查询" id="search-submit"/>
+        <ul data-role="listview" data-inset="true" id="list">
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li><a href="#" data-icon="phone" class="ui-btn-active">手机</a></li>
+                <li><a href="#" data-icon="cloud">天气</a></li>
+                <li><a href="#" data-icon="grid">其他</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script>
+    var url="http://cors.itxti.net/?www.webxml.com.cn/WebServices/MobileCodeWS.asmx/getMobileCodeInfo?userId="
+    var getTelInfo= function () {
+        //得到用户输入的号码
+        var tel=$('#tel').val();
+        var list=$('#list');
+        //数据校验
+       if(tel){
+           //校验号码是否正确
+           var pattern=/^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+           if(pattern.test(tel)){
+               var searchBtn=$(this);
+               searchBtn.button('disable');
+               $.mobile.loading('show',{text:'查询中...',textVisible:true});
+               $.get(url,{'mobileCode':tel}, function (data) {
+                   list.html("<li><span style='color:red'>"+$(data).find('string').text() +"</span></li>");
+                   list.listview('refresh');
+                   $.mobile.loading('hide');
+                   searchBtn.button('enable');
+               });
+           }else{
+               list.html("<span style='color:red'>您输入的号码不合法</span>");
+           }
+       }else{
+           list.html("<span style='color:red'>请输入要查询的号码</span>");
+       }
+    }
+    var bindEvent= function () {
+        $('#search-submit').on('click',getTelInfo);
+    }
+    //页面加载事件
+    $(document).on('pagecreate','#index', function () {
+        bindEvent();
+    })
+</script>
+</body>
+</html>
