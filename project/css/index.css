@@ -1,0 +1,603 @@
+@charset "utf-8";
+
+/* 共用 */
+.comwidth{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img_box{
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* top */
+.top_bar{
+    height: 31px;
+    line-height: 31px;
+    background: #f7f7f7;
+}
+.img_nav{
+    padding-top:2px; 
+    background: url(../images/icon/collection.jpg)no-repeat center left;
+    padding: 19px;
+    font-weight: bold;
+}
+.top_nav{
+    background: #1D7AD9;
+    height: 85px;
+}
+.nav_img{
+    padding-left: 41px;
+    padding-top: 13px;
+}
+.nav_gif{
+    display: inline-block;
+    padding-top: 25px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+.search{
+    width: 470px;
+    padding-left: 140px;
+    padding-top: 24px;
+}
+.search_txt{
+    height: 35px;
+    width: 370px;
+    padding: 0 5px;
+    background: #fff;
+}
+.search_btn{
+    height: 35px;
+    width: 90px;
+    background: #FF8C00;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.shop_nav{
+    width: 145px;
+    height: 35px;
+    background: #FF8C00;
+    margin-top: 24px;
+    margin-right: 80px;
+    color: #fff;
+    display: inline;
+    font-size: 14px;
+}
+
+.shop_txt{
+    height: 100%;
+    width: 87px;
+    border-right: 1px solid #e27a00;
+    background: url(../images/icon/shaoIcon.jpg) 10px center no-repeat;
+     text-indent: 40px; 
+}
+.shop_num{
+    width: 27px;
+    height: 35px;
+    background: url(../images/icon/sj.jpg) 33px center no-repeat;
+    border-left: 1px solid #ff9c01;
+    text-align: right;
+    padding-right: 29px;
+}
+.shop_nav a{
+    color: #fff;
+    line-height: 35px;
+}
+
+/* shop */
+.nav_box{
+    color: #fff;
+    background: #1369C0;
+    height: 35px;
+}
+.shop_class{
+    position: relative;
+    width: 190px;
+}
+.shop_class h3{
+    text-align: center;
+    line-height: 35px;
+    font-size: 14px;
+}
+.shop_classion{
+    background-image: url(../images/icon/icon.png);
+    background-repeat: no-repeat;
+}
+.shop_classion{
+    width: 11px;
+    height: 7px;
+    overflow: hidden;
+    background-position: 0 -39px;
+    margin-left: 11px;
+    display: inline-block;
+}
+.calss_show{
+    background: #4593FD;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 100%;
+    padding-bottom: 1px;
+}
+.class_item{
+    padding: 13px 10px;
+    border-bottom: #3487F2 solid 1px;
+    border-top: #5aa1fe solid 1px;
+    line-height: 16px;
+}
+.class_item dt{
+    height: 21px;
+    line-height: 1;
+    overflow: hidden;
+    background: url(../images/icon/shop_sj.jpg) right center no-repeat;
+}
+.class_item dt a{
+    font-size: 14px;
+    color: #fff;
+}
+.class_item dd a{
+    color: #fff;
+    font-size: 14px;
+}
+.class_item .aLink{
+    width: 48px;
+    height: 20px;
+    background: url(../images/icon/aLink_bg.png) left center no-repeat;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    text-decoration: underline;
+}
+/* list */
+.nav_list{
+   line-height: 35px;
+}
+.nav_list li{
+    float: left;
+}
+.nav_list a{
+    height: 35px;
+    color: #fff;
+    padding: 0 35px;
+    display: inline-block;
+}
+.active{
+    background: #4593FD;
+}
+/* banner */
+.banner{
+    margin-bottom: 15px;
+}
+.banner_bar{
+    position: relative;
+    overflow: hidden;
+    float: right;
+}
+.banner_box{
+    width: 1010px;
+    height: 326px;
+}
+.banner_box img{
+    width: 810px;
+    height: 326px;
+}
+.banner_box .banner_img{
+    width: 1620px;
+    height: 326px;
+}
+.banner_img li{
+    float: left;
+}
+.banner_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Tit{
+    height:44px;
+    line-height: 44px;
+    margin-bottom: 15px;
+}
+.icon{
+    width: 44px;
+    height: 44px;
+    background: url(../images/icon/shopIcon.jpg) left top no-repeat;
+}
+.Tit h3{
+    font-weight: normal;
+    font-size: 24px;
+    padding-left: 15px;
+}
+.right_list{
+    padding-right: 200px;
+}
+.box_left{
+    margin-bottom: 15px;
+}
+.banner_left,.left_img img{
+    width: 190px;
+    height: 400px;
+}
+.banner_left .banner_img{
+    width: 380px;
+    height: 400px;
+}
+.banner_img li{
+    float: left;
+}
+.imgNum{
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+.imgNum a{
+    width: 20px;
+    height: 5px;
+    overflow: hidden;
+    background: #fff;
+    display: inline-block;
+    margin: 0 3px;
+}
+.imgNum  .imgactive{
+    background-color: #FF7700;
+}
+/* right list */
+.rt_list{
+    width: 808px;
+    border: 1px solid #999;
+    border-bottom: #FF7201 solid 3px;
+    height: 396px;
+    overflow: hidden;
+}
+.list_top{
+    margin-right: -4px;
+}
+.list_item{
+    width: 202px;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    height: 279px;
+    text-align: center;
+}
+.list_item a img{
+    width: 100%;
+    height: 218px;
+    display: block;
+}
+.list_item dt{
+    font-size: 16px;
+    font-weight: bold;
+}
+.list_item dd{
+    font-size: 14px;
+    color: #ff7300;
+}
+.list_sum{
+    width: 202px;
+    padding-top:6px;
+    border-right: 1px solid #999;
+    height: 110px; 
+}
+.list_img{
+    width: 95px;
+    height: 95px;
+    text-align: center;
+    float: left;
+}
+.list_img img{
+    width: 95px;
+    height: 95px;
+}
+.list_text{
+    float: left;
+    width: 100px;
+    padding-top: 28px;
+}
+.list_text p{
+    color: #ff7300;
+}
+.list_text h3{
+    font-weight: normal;
+    font-size: 16px;
+    color: #181818;
+    line-height: 30px;
+}
+.footer{
+    text-align: center;
+    background: #D4D4D4;
+    padding: 50px 0;
+    line-height: 24px;
+}
+.footer a{
+    color: #000;
+}
+.footer a:hover{
+    color: #ff7300;
+}
+.footer i{
+    font-style: normal;
+    margin: 0 5px;
+}
+.footer_item{
+    margin-top: 30px;
+}
+.footer_item img{
+    margin: 0 10px;
+}
+
+/* login */
+.login{
+    height: 85px;
+    background: #1D7AD9;
+}
+.login .comwidth{
+    width: 460px;
+}
+.log{
+    margin-top: 15px;
+}
+.weltitle{
+    float: left;
+    font-size: 22px;
+    color: #fff;
+    padding-left: 24px;
+    font-weight: normal;
+    line-height: 88px;
+}
+.login_nav{
+    width: 458px;
+    border: 1px solid #999;
+    margin: 10px auto;
+    position: relative;
+}
+.login_con{
+    padding: 15px 76px;
+}
+.l_it{
+    color: #666;
+    line-height: 20px;
+}
+.log_reg{
+    margin-bottom: 10px;
+}
+.log_input{
+    height: 32px;
+    border:1px solid #999;
+    text-align: left;
+    width: 100%;
+    padding-left: 5px;
+}
+.user_icon{
+    background: url(../images/icon/user_icon.jpg) right center no-repeat;
+}
+.auto_log{
+    padding: 27px 0;
+}
+.checked{
+    position: relative;
+    top:3px;
+    margin-right: 3px;
+}
+.log_btn{
+    background: url(../images/icon/login_btn.jpg) left top no-repeat;
+    width: 314px;
+    height: 36px;
+}
+.log_text{
+    padding-top: 30px;
+}
+.log_list li{ 
+    float: left;
+    color: #999;
+}
+.reg_link{
+    background: url(../images/icon/red_link.jpg) left top no-repeat;
+    width: 115px;
+    height: 31px;
+    position: absolute;
+    right: 31px;
+    bottom: -31px;
+}
+/* product desxiption */
+.userposition{
+    font-family: Verdana;
+    font-size: 0;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.userposition strong{
+    font-size: 12px;
+}
+.userposition em{
+    font-weight: normal;
+    font-style: normal;
+}
+.desciption{
+    border: 1px solid #ccc;
+}
+.des_left{
+    float: left;
+    width: 309px;
+}
+.big_imgs{
+    height: 340px;
+    text-align: center;
+}
+.small_img{
+    padding-left: 1px;
+    width: 265px;
+    margin: 0 auto;
+}
+.small_img li{
+    float: left;
+    margin-left: -1px;
+}
+.small_img .desactive{
+    border-color: #317EE7;
+    position: relative;
+}
+.small_img img{
+    border:1px solid #ccc;
+}
+.des_right{
+    border-left: 1px solid #ccc;
+    width: 688px;
+}
+.des_content{
+    padding: 10px;
+}
+.des_content h3{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 13px 25px;
+}
+.des_dl{
+    margin-bottom: 8px;
+}
+.des_dt{
+    width: 70px;
+    float: left;
+    position: relative;
+    line-height: 23px;
+    text-indent: 17px;
+    color: #666;
+}
+.des_h{
+    color: #f30;
+    font-size: 18px;
+    font-family: verdana;
+}
+.des_dd{
+    padding-left:75px; 
+}
+.hg {
+    padding-top: 4px;
+    display: inline-block;
+    font-size: 12px;
+}
+.hg .hg_icon{
+    background-image: url(../images/icon/icon.png);
+    background-repeat: no-repeat;
+}
+.hg_icon{
+    background-position:0 -101px; 
+    width: 55px;
+    height: 18px;
+    display: inline-block;
+    text-indent: 16px;
+    line-height: 18px;
+    margin-right: 10px;
+    float: left;
+    font-style: normal;
+    color: #fff;
+    
+}
+.hg em{
+    font-style: normal;
+    color: #000;
+}
+.des_position{
+    background-color: #f2f2f2;
+    padding: 15px 0;
+}
+.select{
+    border: 1px solid #999;
+    height: 22px;
+    line-height: 22px;
+    position: relative;
+    z-index: 4;
+    float: left;
+    padding-left: 10px;
+    padding-right: 20px;
+    background: #fff;
+}
+.select h3{
+    font-size: 12px;
+    font-style: normal;
+    padding: 0;
+    color: #666;
+}
+.select span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background: url(../images/icon/sj_blue.jpg) center center no-repeat;
+}
+.show_select{
+    position: absolute;
+    left: -1px;
+    top: 22px;
+    background: #fff;
+    display: none;
+    width: 100%;
+    border: 1px solid #999;
+}
+.show_select li{
+    padding-left: 10px;
+}
+.thegood{
+    line-height: 24px;
+    padding-left: 10px;
+}
+.des_dd .des_active{
+    border-color: #317EE7;
+    color: #333;
+}
+.des_item{
+    padding: 9px 10px;
+    border: 1px solid #ccc;
+    float: left;
+    background: #fff;
+    margin-right: 10px;
+    color: #666;
+}
+.des_concat{
+    line-height: 35px;
+}
+.des_more{
+    line-height: 55px;
+}
+.des_sm{
+    padding: 3px 7px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    float: left;
+    background: #fff;
+    margin-right: 10px;
+    color: #666;
+}   
+.des_box{
+    line-height: 32px;
+}
+.des_number{
+    border: #b2b2b2 solid 1px ;
+    height: 32px;
+    width: 82px;
+    float: left;
+}
+.des_number div{
+    float: left;
+    height: 100%;
+}
+.reduction{
+    border: 1px solid #ccc;
+}
+.reduction{
+    background: url(../images/icon/plus_bg.jpg) left top no-repeat;
+    width: 15px;
+    line-height: 32px;
+    text-align: center;
+    color: #333;
+}

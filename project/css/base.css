@@ -1,0 +1,41 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Microsoft YaHei", "微软雅黑";
+}
+body{
+    font-size: 12px;
+}
+img{
+    border:none;
+}
+input,select,textarea{
+    outline: none;
+    border:none;
+    background: none;
+}
+ul,li{
+    outline: none;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #656565;
+}
+
+/* 清除浮动 */
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+.lf{
+    float: left;
+}
+.rt{
+    float: right;
+}
