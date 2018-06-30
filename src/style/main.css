@@ -1,0 +1,420 @@
+body{
+  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+#app{
+  height: 100vh;
+  width: 100vw;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+/*element-ui局部样式修改*/
+.el-tabs--border-card>.el-tabs__content{
+  padding-top: 0;
+}
+/*Element-ui弹出层样式调整*/
+.el-dialog__header{
+  padding: 15px 20px 10px;
+}
+.el-dialog__body{
+  padding: 0 20px;
+  border-top: 1px solid #eaeefb;
+  border-bottom: 1px solid #eaeefb;
+}
+.el-dialog__body .el-button--small{
+  padding: 5px 8px;
+}
+.el-dialog__body{
+  min-height: 200px;
+}
+.left-search-body{
+  border-right: 1px solid #eaeefb;
+  min-height: 200px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+.right-search-body{
+  -webkit-flex:1;
+  flex: 1;
+  padding:10px;
+}
+.btn-list .el-dropdown .el-button{
+  /*background: #d0e9ff;*/
+  /*border:none;*/
+  /*color: #333;*/
+  /*font-size: 13px;*/
+  /*padding: 5px 6px;*/
+}
+.el-dialog .el-input{
+  width: 220px;
+}
+.el-dialog .el-date-editor{
+  width: 220px;
+}
+.el-dialog__body{
+  padding-top:20px;
+}
+.el-dialog .el-form-item{
+  margin-bottom: 15px;
+}
+.el-dialog .el-form{
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.head_title{
+  margin: 0;
+  padding:12px 0;
+}
+.container .el-row{
+  /*background: #d0e9ff;*/
+  height:40px;
+  padding:5px 0;
+}
+.container table .el-button{
+  width: 50%;
+  padding: 0;
+}
+.container .el-dropdown{
+  padding:0 8px;
+}
+/*.container .el-row .el-button-group .el-button{*/
+  /*padding:5px;*/
+/*}*/
+/*.container .el-pagination{*/
+  /*margin-top:10px;*/
+/*}*/
+.container .el-tabs{
+  padding-left: 0;
+  padding-right: 0;
+}
+.verify-automate .el-form-item__label{
+  flex: 1;
+  font-size: 13px;
+}
+
+/*****HOME*****/
+#Home{
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+.wrapper{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+/*main内容*/
+.main{
+  background: #f6f6f6;
+  position: absolute;
+  top: 60px;
+  left: 200px;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  -webkit-transition: left .3s ease-in-out;
+  -o-transition: left .3s ease-in-out;
+  transition: left .3s ease-in-out;
+}
+.container{
+  padding: 10px 20px 0 20px;
+}
+.pagination{
+  margin-top: 10px;
+}
+.verify-automate .el-dialog__body{
+  min-height: 35px;
+}
+.verify-automate .el-dialog__footer{
+  padding: 10px 20px 10px;
+}
+/*标题*/
+.container h2{
+  margin:10px 0;
+}
+/*设置边框角度和阴影*/
+.container>div{
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding:0 20px 10px;
+
+}
+/*路由跳转动画*/
+.move-enter-active,
+.move-leave-active {
+  transition: opacity .5s;
+}
+.move-enter,
+.move-leave {
+  opacity: 0;
+}
+
+
+/*****HEADER 头部*****/
+header{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  line-height:60px;
+  font-size: 22px;
+  color: #fff;
+  background-color: rgb(31, 38, 46);
+  -webkit-transition: all .3s ;
+  -moz-transition: all .3s ;
+  transition:all .3s ;
+
+}
+.collapse-btn{
+  float: left;
+  height: 100%;
+  padding:0 20px;
+  cursor: pointer;
+}
+.top-nav{
+  display: flex;
+  -webkit-box-flex:1;
+  flex:1;
+  justify-content: flex-end;
+}
+.top-nav>div{
+  cursor: pointer;
+  margin-right: 40px;
+}
+/*厂商*/
+.company{
+  margin-left: 15px;
+}
+/*消息*/
+.news{
+  position: relative;
+}
+.msg{
+  background-color: #d76662;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 8px;
+  width: 8px;
+  margin-top: -10px;
+  margin-right: -5px;
+}
+/*退出or设置*/
+.head .el-dropdown{
+  color: #fff;
+  font-size: 20px;
+}
+
+
+/*****SIDEBAR左侧边栏*****/
+#sidebar-left{
+  display: inline-block;
+  height: 100%;
+}
+#sidebar-left>ul{
+  height: 100%;
+}
+.el-menu-vertical-demo:not(.el-menu--collapse) {
+  width: 200px;
+  min-height: 400px;
+}
+.content-collapse{
+  left:64px;
+}
+
+/*****HEAD_SEARCH 搜索*****/
+.head_search{
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+}
+.head_search .head_title{
+  -webkit-flex: 1;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+.search{
+  cursor: pointer;
+}
+.search-contain{
+  display: -webkit-flex;
+  display: flex;
+}
+.search .el-button{
+  padding-bottom: 5px;
+}
+
+
+/*****TAGS 顶部标签 *****/
+.tags{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  height: 30px;
+}
+.tags .tag-box{
+  -webkit-flex: 1;
+  flex: 1;
+}
+.tags ul{
+  align-content: center;
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 2px;
+}
+.tags li{
+  align-items: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid rgba(64,158,255,.2);
+  background-color: rgba(64,158,255,.1);
+  cursor: pointer;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 12px;
+  height: 26px;
+  list-style: none;
+  line-height: 26px;
+  margin:0 6px;
+  padding: 0 6px;
+  white-space: nowrap;
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+.tags li a{
+  display: block;
+  color: #409EFF;
+  text-decoration: none;
+}
+/*关闭标签按钮*/
+.tag-close-box .el-dropdown span{
+  color: #409EFF;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 10px;
+}
+/*选中状态*/
+.tags li.active{
+  background: #409EFF;
+}
+.tags li.active a{
+  color: #fff;
+}
+/*删除*/
+.tag_delete{
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+  width: 16px;
+  margin-left: 3px;
+  text-align: center;
+  -webkit-transition: all .2s ease-in;
+  -moz-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+
+}
+.tag_delete:hover{
+  background: #409EFF;
+  color: #fff;
+
+}
+.tags .active .tag_delete:hover {
+  background: #fff;
+  color: #409EFF;
+}
+
+/*****CHART系统首页*****/
+
+
+
+
+/*****INQUIRY单据查询*****/
+
+
+/*orderReceivable订单应收*/
+/*修改订单应收页面element-ui td样式*/
+.bill{
+  height: 100%;
+  /*padding:30px;*/
+  background: #fff;
+}
+.el-row{
+  margin-bottom: 15px;
+}
+
+table .cell{
+  text-align: center;
+}
+
+table .el-button+.el-button{
+  padding:5px 0 ;
+  margin-left: 0;
+}
+.el-table td{
+  padding:4px 0;
+}
+/*订单新增or订单修改*/
+.order-detail .el-tabs,.order-add .el-tabs{
+  min-height:334px;
+}
+.order-detail .el-tabs .btn-wrap,.order-add .el-tabs .btn-wrap{
+  margin:10px 0;
+}
+.order-detail .el-row,.order-add .el-row{
+  margin-bottom: 20px;
+}
+.order-detail .grid-content,.order-add .grid-content {
+  display: -ms-flexbox;
+  display:-webkit-flex;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  min-height: 36px;
+}
+.order-detail .grid-content>span,.order-add .grid-content>span{
+  display: block;
+  font-size:13px;
+  margin-right: 10px;
+  min-width:90px;
+  text-align: right;
+}
+.order-detail .grid-content .el-input,.order-add .grid-content .el-input{
+  -webkit-flex:1;
+  -ms-flex:1;
+  flex: 1;
+  max-width:194px;
+}
+/*transactionFlow交易流水*/
+
+/*systemStatement系统对账单*/
+
+/*bankFlow银行流水*/
+
+/***** VERIFY_PLATFORM对账平台 *****/
+
+/*verifyReceivables收款对账*/
+
+/*verifyBankStatement银行对账*/
+
+
+/*****VERIFY_RECORD对账记录*****/
+/*verifyReceivablesRecord 对账记录收款对账*/
+
+
+/*verifyBankStatementRecord对账记录银行对账*/
+
+
