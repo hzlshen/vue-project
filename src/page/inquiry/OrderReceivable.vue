@@ -7,7 +7,6 @@
         <batchUnAudit></batchUnAudit>
         <batchDifferences></batchDifferences>
         <batchDelete></batchDelete>
-        <treeView class="item" :model="treeData"></treeView>
       </div>
       <div class="container">
         <template>
@@ -201,7 +200,6 @@
   import batchDifferences from '../../components/filterBox/batchDifferences'
   import batchDelete from '../../components/filterBox/batchDelete'
   import btnList from '../../components/btnList/btnList'
-  import treeView from '../../components/treeView/treeView'
   export default {
         name: 'bill',
         components: {
@@ -211,7 +209,6 @@
           batchDifferences,//批量差异对帐
           batchDelete,//批量删除
           btnList,//按钮
-          treeView
         },
         data () {
             return {
