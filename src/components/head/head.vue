@@ -67,11 +67,11 @@
               companyList:[
                 {
                   value: '选项1',
-                  label:'美联华',
+                  label:'公司一',
                 },
                 {
                   value: '选项2',
-                  label:'幸福西饼',
+                  label:'公司二',
                 }
               ]
             }
@@ -86,9 +86,6 @@
       },
       methods:{
         ...mapActions(["getCollapse", "getCompanyValue"]),//简写
-//        getCompanyValue(){
-//          this.$store.dispatch('getCompanyValue',this.companyValue);
-//        }
       }
     }
 </script>
