@@ -9,6 +9,10 @@
 <br/>
 ![](https://github.com/hzlshen/Imgage_box/blob/master/vue-project1.png)
 
+![](https://github.com/hzlshen/Imgage_box/blob/master/vue-project2.png)
+
+
+
 ###安装
 
 项目地址：（`git clone`）
