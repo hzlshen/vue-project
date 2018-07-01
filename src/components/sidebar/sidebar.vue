@@ -3,9 +3,9 @@
       <el-menu
         :collapse="collapse"
         class="el-menu-vertical-demo"
-        background-color="#323443"
+        background-color="#428BCA"
         text-color="#fff"
-        active-text-color="#ffd04b"
+        active-text-color="#fff"
         unique-opened router>
         <template v-for="(item,index) in sidebarInfo">
             <el-submenu :index="item.index" :key="item.index" v-if="item.subNav">
