@@ -53,7 +53,7 @@
                   subNav:[
                     {
                       index:'/orderReceivable',
-                      title:'订单应收'
+                      title:'应收单据'
                     },
                     {
                       index:'/transactionFlow',
@@ -75,7 +75,7 @@
                 {
                   icon: 'el-icon-date',
                   index:'2',
-                  title: '对账平台',
+                  title: '财务对账',
                   subNav:[
                     {
                       index: '/verifyReceivables',
