@@ -166,7 +166,7 @@ header{
   line-height:60px;
   font-size: 22px;
   color: #fff;
-  background-color: rgb(31, 38, 46);
+  background-color: #428BCA;
   -webkit-transition: all .3s ;
   -moz-transition: all .3s ;
   transition:all .3s ;
@@ -278,7 +278,7 @@ header{
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   border: 1px solid rgba(64,158,255,.2);
-  background-color: rgba(64,158,255,.1);
+  background-color: #7CBCE8;
   cursor: pointer;
   display: -webkit-flex;
   display: flex;
