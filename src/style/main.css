@@ -278,7 +278,7 @@ header{
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   border: 1px solid rgba(64,158,255,.2);
-  /* background-color: #7CBCE8; */
+  background-color: #7CBCE8;
   cursor: pointer;
   display: -webkit-flex;
   display: flex;
@@ -398,6 +398,15 @@ table .el-button+.el-button{
   flex: 1;
   max-width:194px;
 }
+
+/*右侧栏*/
+.el-submenu__title i{
+  color: #fff!important;
+}
+.el-menu-item i{
+  color: #fff!important;
+}
+
 /*transactionFlow交易流水*/
 
 /*systemStatement系统对账单*/

@@ -182,5 +182,7 @@
     }
 </script>
 <style scoped>
-
+  .el-submenu__title i{
+    color: #fff;
+  }
 </style>
