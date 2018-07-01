@@ -44,12 +44,12 @@
                   title: '我的账户'
                 },
                 /**
-                 * inquiry 单据查询
+                 * inquiry 原始单据
                  * **/
                 {
                   icon: 'el-icon-tickets',
                   index:'1',
-                  title: '单据查询',
+                  title: '原始单据',
                   subNav:[
                     {
                       index:'/orderReceivable',
@@ -101,11 +101,11 @@
                   subNav:[
                     {
                       index:'/verifyReceivablesRecord',
-                      title:'收款对账'
+                      title:'收款记录'
                     },
                     {
                       index:'/verifyBankStatementRecord',
-                      title:'银行对账'
+                      title:'银行记录'
                     }
                   ]
                 },
@@ -114,7 +114,7 @@
                  * **/
                 {
                   icon: 'el-icon-star-off',
-                  title: '报表',
+                  title: '月结报表',
                   index:'4',
                   subNav:[
                     {
@@ -129,7 +129,7 @@
                 },
                 {
                   icon: 'el-icon-more',
-                  title: '设置',
+                  title: '系统设置',
                   index:'5',
                   subNav:[
                     {
