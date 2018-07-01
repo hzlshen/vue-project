@@ -47,12 +47,12 @@ npm run build
 ├── package.json       // 项目配置文件
 ├── src                // 生产目录
 │   ├── assets         // css js 和图片资源
-│   ├── axios         // ajax url 放置
+│   ├── axios          // ajax url 放置
 │   ├── components     // 各种组件
 │   ├── images         // 图片文件夹
-│   ├── page          // 各种页面
+│   ├── page           // 各种页面
 │   ├── router         // 页面路由
-│   ├── store           // vuex状态管理器
-│   ├── style         // 样式文件
+│   ├── store          // vuex状态管理器
+│   ├── style          // 样式文件
 │   └── main.js        // Webpack 预编译入口
 </pre>
