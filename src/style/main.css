@@ -278,7 +278,7 @@ header{
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   border: 1px solid rgba(64,158,255,.2);
-  background-color: #7CBCE8;
+  /* background-color: #7CBCE8; */
   cursor: pointer;
   display: -webkit-flex;
   display: flex;
