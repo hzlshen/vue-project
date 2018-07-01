@@ -1,7 +1,28 @@
 <template>
-    <div class="chart">
-      <div ref="myChart" :style="{width: '100%', height: '300px'}"></div>
-    </div>
+
+      <div>
+        <template>
+          <el-tabs v-model="activeName" @tab-click="handleClick">
+            <el-tab-pane label="用户管理" name="first">
+              <div class="chart">
+                <div ref="myChart" :style="{width: '100%', height: '300px'}"></div>
+              </div>
+            </el-tab-pane>
+            <el-tab-pane label="配置管理" name="second">
+              <!-- <div class="chart">
+                <div ref="myChart" :style="{width: '100%', height: '300px'}"></div>
+              </div> -->
+            </el-tab-pane>
+            <el-tab-pane label="角色管理" name="third">
+              <!-- <div class="chart">
+                <div ref="myChart" :style="{width: '100%', height: '300px'}"></div>
+              </div> -->
+            </el-tab-pane>
+
+          </el-tabs>
+        </template>
+      </div>
+
 </template>
 
 <script>
@@ -19,7 +40,7 @@
         name: 'chart',
         data () {
             return {
-
+              activeName: 'first'
             }
         },
       mounted(){
@@ -29,6 +50,9 @@
 
       },
       methods:{
+         handleClick(tab, event) {
+            console.log(tab, event);
+          },
         drawLine(){
           // 基于准备好的dom，初始化echarts实例
           let myChart = this.$echarts.init(this.$refs.myChart);
