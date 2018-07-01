@@ -62,7 +62,7 @@
                   <el-date-picker
                     v-model="fromData.businessDate"
                     size="small"
-                    type="datetime"
+                    type="date"
                     placeholder="选择日期时间">
                   </el-date-picker>
                 </div>
