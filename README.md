@@ -1,4 +1,6 @@
-# my-project
+# vue-project
+  
+ ``` 基于vue-cli构建的财务后台管理系统(vue2+vuex+axios+vue-router+element-ui)
 
 > A Vue.js project
 
@@ -17,5 +19,3 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
