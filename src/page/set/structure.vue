@@ -15,7 +15,7 @@
           <div class="treeBox">
             <!--<treeView class="item" :tree="treeData"></treeView>-->
             <ul >
-              <treeView class="item" :model="treeData"></treeView>
+              <!-- <treeView class="item" :model="treeData"></treeView> -->
             </ul>
           </div>
         </el-col>
@@ -26,11 +26,11 @@
 </template>
 
 <script>
-  import treeView from '../../components/treeView/treeView'
+  // import treeView from '../../components/treeView/treeView'
   export default {
       name: 'structure',
       components: {
-        treeView
+        // treeView
       },
       data () {
         return {
