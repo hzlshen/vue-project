@@ -27,11 +27,11 @@ ul{
   padding: 5px 8px;
 }
 .el-dialog__body{
-  min-height: 200px;
+  min-height: 160px;
 }
 .left-search-body{
   border-right: 1px solid #eaeefb;
-  min-height: 200px;
+  min-height: 160px;
   padding-top: 10px;
   padding-right: 10px;
 }
@@ -111,7 +111,7 @@ ul{
   background: #f6f6f6;
   position: absolute;
   top: 60px;
-  left: 200px;
+  left: 160px;
   right: 0;
   bottom: 0;
   overflow-y: auto;
@@ -223,7 +223,7 @@ header{
   height: 100%;
 }
 .el-menu-vertical-demo:not(.el-menu--collapse) {
-  width: 200px;
+  width: 160px;
   min-height: 400px;
 }
 .content-collapse{
