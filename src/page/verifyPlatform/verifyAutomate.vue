@@ -33,7 +33,7 @@
                       <el-date-picker
                         size="small"
                         v-model="form.time"
-                        type="datetime"
+                        type="date"
                         placeholder="选择日期时间">
                       </el-date-picker>
                     </el-form-item>
@@ -43,7 +43,7 @@
                       <el-date-picker
                         size="small"
                         v-model="form.time"
-                        type="datetime"
+                        type="date"
                         placeholder="选择日期时间">
                       </el-date-picker>
                     </el-form-item>
