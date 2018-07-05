@@ -22,10 +22,13 @@ export const lookOption = (username,password,captcha) => fetch({//lookOption是�
   }
 });
 //获取公司
-export const getCompany = () => fetch({
+export const getCompany = (date,audit) => fetch({
   url:'',
   method:'',
-  params:{}
+  params:{
+    date,
+    audit
+  }
 });
 
 //订单应收获取数据

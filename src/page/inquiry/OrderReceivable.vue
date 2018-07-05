@@ -193,7 +193,7 @@
 
 <script>
   import {mapState} from 'vuex'
-  import {getOrderReceivable} from '../../axios/api'
+  import {getOrderReceivable,getCompany} from '../../axios/api'
   import search from '../../components/search/Search'
   import batchAudit from '../../components/filterBox/batchAudit'
   import batchUnAudit from '../../components/filterBox/batchUnAudit'
@@ -260,8 +260,14 @@
         },
         mounted(){
           this.getLocalData()
+          this.getCompanyfun()
         },
         methods:{
+
+          getCompanyfun(){
+
+          },
+
           handleSizeChange(val) {
             console.log(`每页 ${val} 条`);
           },
