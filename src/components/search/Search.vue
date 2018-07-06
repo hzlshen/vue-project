@@ -535,11 +535,11 @@
         },
         //高级查询取消
         queryCancel(){
-
+          this.dialogFormVisible = false;
         },
         //高级查询确定
         determine(){
-
+          this.dialogFormVisible = false;
         },
         //方案名
         projectName(){
@@ -547,6 +547,14 @@
         },
         //默认方案
         checkClick(){
+
+        },
+        //方案取消
+        saveCacel(){
+
+        },
+        //方案确定
+        saveQu(){
 
         },
         //单一查询确认
