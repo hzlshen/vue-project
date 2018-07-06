@@ -335,19 +335,185 @@
         name: 'HelloWorld',
         data () {
             return {
-              dialogTableVisible: false,
-              dialogFormVisible: false,
-              form: {
-                name: '',
-                region: '',
-                date1: '',
-                date2: '',
-                delivery: false,
-                type: [],
-                resource: '',
-                desc: ''
-              },
-              formLabelWidth: '120px'
+              dialogSave:false,//方案模态
+                dialogFormVisible: false,//高级查询模态
+                form: {
+                  name: '',
+                  region: '',
+                  date1: '',
+                  date2: '',
+                  delivery: false,
+                  type: [],
+                  resource: '',
+                  desc: ''
+                },
+                formLabelWidth: '120px',
+                //高级查询
+                reconciliationPlanInfoList: [{
+                  'selected': '',
+                  'comparing': '',
+                  'logic': '',
+                  logsSelect: false, // 值下拉
+                  logsText: true, //值输入
+                  logsDate: false, //日期
+                  pyType: false,
+                  'valDate': '',
+                  'valSelect': '',
+                  'valText': '',
+                  'platId': '', //活的
+                  advancedName: '',
+                  queryType: '',
+                  'reconStatus': '',
+                  'invoiceStatus': '',
+                  'differenseStatus': '',
+                  'refundStatus': '',
+                  'saveName': '',
+                  'mark': '',
+                  'uuid': '',
+                  'pageNumber': 1, //第几页
+                  'pageSize': 100, //每页展示数
+                  'selectPageNumber': ''
+              }],
+              //单一
+              reconDanyiIquireList: [{
+                  'selected': '',
+                  'comparing': '',
+                  'logic': '',
+                  logsSelect: false, // 值下拉
+                  logsText: true, //值输入
+                  logsDate: false, //日期
+                  pyType: false,
+                  'valDate': '',
+                  'valSelect': '',
+                  'valText': '',
+                  'platId': '', //活的
+                  advancedName: '',
+                  queryType: '',
+                  'reconStatus': '',
+                  'invoiceStatus': '',
+                  'differenseStatus': '',
+                  'refundStatus': '',
+                  'saveName': '',
+                  'mark': '6',
+                  'uuid': '',
+                  'pageNumber': 1, //第几页
+                  'pageSize': 100, //每页展示数
+                  'selectPageNumber': ''
+              }],
+              logsgetData: [{
+                  text: '并且'
+              }, {
+                  text: '或者'
+              }],
+              //重写model
+              chayiD: '',
+              refuncomm: '',
+              statusinqu: '',
+              reconModel: '',
+
+              chayiData: [{
+                      value: '',
+                      name: '全部'
+                  },
+                  {
+                      value: 'Y',
+                      name: '是'
+                  },
+                  {
+                      value: 'N',
+                      name: '否'
+                  },
+              ],
+              refundData: [{
+                      value: '',
+                      name: '全部'
+                  },
+                  {
+                      value: 'UnRefund',
+                      name: '未退款'
+                  },
+                  {
+                      value: 'PartRefund',
+                      name: '部分退款'
+                  },
+                  {
+                      value: 'CompleteRefund',
+                      name: '完全退款'
+                  },
+                  {
+                      value: 'RefundException',
+                      name: '退款异常'
+                  },
+              ],
+
+              statusData: [{
+                      value: '',
+                      name: '全部'
+                  },
+                  {
+                      value: 'Save',
+                      name: '保存'
+                  },
+                  {
+                      value: 'Audited',
+                      name: '审核'
+                  },
+                  {
+                      value: 'HandClose',
+                      name: '手工关闭'
+                  },
+                  {
+                      value: 'AtuoClose',
+                      name: '自动关闭'
+                  },
+              ],
+              reconData: [{
+                      value: '',
+                      name: '全部'
+                  },
+                  {
+                      value: 'UnSettled',
+                      name: '未对账'
+                  },
+                  {
+                      value: 'Part',
+                      name: '部分对账'
+                  },
+                  {
+                      value: 'Completely',
+                      name: '完全对账'
+                  },
+                  {
+                      value: 'Exception',
+                      name: '异常'
+                  },
+              ],
+              selected: '',
+              optionData:[],//一级data
+              compareJsonlist: [], //二级
+              ValData: [], //三级
+              platData:[], //四级
+              startText: '',
+              saveTitle: false, //模态
+              saveTitle1: false, //模态
+              pagination: true, //分页
+              paginations: false, //高级分页
+              savename: '', //保存的名字
+              disdate: false,
+              Listdata: [], //保存列表
+              num: -1,
+              proname: '', //方案名
+              renId: '', //方案uuid
+              userId: '', //方案userid
+              renamedele: '',
+              idenName:'', //重命名标识
+              savename1: '',
+              defaultScheme: false, //默认方案
+              indexme: '', //这是查询列表index
+              indexnum:null, //接口index
+              moren:true, //默认方案显示隐藏
+
+
             }
         },
       methods:{
