@@ -68,12 +68,21 @@
         },
         methods:{
           submitForm(ruleForm){
+            this.$refs[ruleForm].validate((valid) => {
             if(valid){
-              this.$message({type:'warning',center:true,message:"修改成功!!!"})
+              this.$message({type:'success',center:true,message:"修改成功!!!"})
+              this.ruleForm = {
+                oldpassword: '',//旧密码
+                newpassword: '',//密码
+                password:'',//确认密码
+              };
             }else{
               this.$message({type:'warning',center:true,message:"请填写..."})
+              return false;
             }
+            })
           }
+
         },
     }
 </script>
