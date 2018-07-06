@@ -582,19 +582,59 @@
         //RIGHT 增删改查
         //新增
         addTr(){
-
+          var newIndex = this.reconciliationPlanInfoList.length;
+          var tr = {
+            index: newIndex,
+            'selected': '',
+            'comparing': '',
+            'logic': '',
+            logsSelect: false, // 值下拉
+            logsText: true, //值输入
+            logsDate: false, //日期
+            pyType: false,
+            'valDate': '',
+            'valSelect': '',
+            'valText': '',
+            'platId': '', //活的
+            advancedName: '',
+            queryType: '',
+            'saveName': '',
+            'mark': '',
+            'pageNumber': 1, //第几页
+            'pageSize': 100, //每页展示数
+          };
+          this.reconciliationPlanInfoList.push(tr);
         },
         //删除
         deleteTr(){
-
+          this.reconciliationPlanInfoList.splice(index, 1);
         },
         //全部删除
         AlldeleteTr(){
-
+          this.reconciliationPlanInfoList.splice(index);
         },
         //插入
         insertTr(){
-
+            var tr = {
+            'selected': '',
+            'comparing': '',
+            'valDate': '',
+            'valSelect': '',
+            'valText': '',
+            'platId': '', //活的
+            logsSelect: false, // 值下拉
+            logsText: true, //值输入
+            logsDate: false,
+            pyType: false,
+            'logic': '',
+            advancedName: '',
+            queryType: '',
+            'saveName': '',
+            'mark': '',
+            'pageNumber': 1, //第几页
+            'pageSize': 100, //每页展示数
+          };
+          this.reconciliationPlanInfoList.push(tr);
         },
 
 
