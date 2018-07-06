@@ -544,8 +544,26 @@
         //单一查询确认
         singleInCon(){
 
-        }
+        },
+        //LEFT 方案list
+        //保存方案
+        savelist(){
 
+        },
+        //另存
+        asSave(){
+
+        },
+        //重命名
+        rename(){
+
+        },
+        //删除
+        deleteKis(){
+
+        },
+
+        //RIGHT 增删改查
 
       }
     }
