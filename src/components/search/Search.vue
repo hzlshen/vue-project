@@ -515,6 +515,12 @@
             }
         },
       methods:{
+
+        //模态框
+        openfilter(){
+          this.dialogFormVisible = true;
+        },
+
         //select change 获取二级列表
         getMore(index){
 
@@ -535,6 +541,10 @@
         checkClick(){
 
         },
+        //单一查询确认
+        singleInCon(){
+
+        }
 
 
       }
