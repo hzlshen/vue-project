@@ -539,6 +539,16 @@
         },
         //高级查询确定
         determine(){
+          if (this.reconciliationPlanInfoList.length == 0) {
+            this.addRow();
+          }
+          this.reconciliationPlanInfoList[0].differenseStatus = this.chayiD;
+          this.reconciliationPlanInfoList[0].reconStatus = this.reconModel;
+          this.reconciliationPlanInfoList[0].refundStatus = this.refuncomm;
+          this.reconciliationPlanInfoList[0].invoiceStatus = this.statusinqu;
+          var data = this.reconciliationPlanInfoList;
+          //组件通讯
+          this.$emit('orderSearchs', data);  //单据 --- 订单
           this.dialogFormVisible = false;
         },
         //方案名
@@ -635,6 +645,31 @@
             'pageSize': 100, //每页展示数
           };
           this.reconciliationPlanInfoList.push(tr);
+        },
+        //当全部删除行的时候
+        addRow: function() {
+              this.reconciliationPlanInfoList = [{
+                'selected': '',
+                'comparing': '',
+                'logic': '',
+                logsSelect: false, // 值下拉
+                logsText: true, //值输入
+                logsDate: false, //日期
+                pyType: false,
+                'valDate': '',
+                'valSelect': '',
+                'valText': '',
+                'platId': '', //活的
+                advancedName: '',
+                queryType: '',
+                'reconStatus': '',
+                'invoiceStatus': '',
+                'differenseStatus': '',
+                'refundStatus': '',
+                'saveName': '',
+                'mark': '',
+                'uuid': ''
+            }]
         },
 
 

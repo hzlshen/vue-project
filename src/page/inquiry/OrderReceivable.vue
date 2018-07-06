@@ -2,7 +2,8 @@
     <div class="bill">
       <div class="head_search">
         <h3 class="head_title">订单应收</h3>
-        <search></search>
+        <!-- 传回父组件 -->
+        <search @orderSearchs="fliterOrder"></search>
         <batchAudit></batchAudit>
         <batchUnAudit></batchUnAudit>
         <batchDifferences></batchDifferences>
@@ -260,12 +261,12 @@
         },
         mounted(){
           this.getLocalData()
-          this.getCompanyfun()
         },
         methods:{
 
-          getCompanyfun(){
-
+          //高级查询
+          fliterOrder(value){
+            alert(JSON.stringify(value),"这是高级查询组件传回来的...")
           },
 
           handleSizeChange(val) {
