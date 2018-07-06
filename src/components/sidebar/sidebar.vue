@@ -148,8 +148,8 @@
                       ]
                     },
                     {
-                      index:'12',
-                      title:'合作伙伴'
+                      index:'/UpdatePWD',
+                      title:'修改密码'
                     },
                     {
                       index:'13',

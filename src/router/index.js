@@ -18,6 +18,7 @@ const OrderSummary =  resolve => require(['../page/reportForms/OrderSummary'], r
 const ReceivablesBalance = resolve => require(['../page/reportForms/ReceivablesBalance'], resolve)
 const Upload = resolve => require(['../page/upload/upload'], resolve)
 const Structure = resolve => require(['../page/set/structure'], resolve)
+const UpdatePWD = resolve => require(['../page/set/updatePWD'], resolve)
 const VerifyAutomate = resolve => require(['../page/verifyPlatform/verifyAutomate'], resolve)
 
 Vue.use(Router);
@@ -130,6 +131,12 @@ export default new Router({
           path: '/Structure',
           component: Structure,
           meta: { title: '组织架构'}
+        },
+        //修改密码
+        {
+          path: '/UpdatePWD',
+          component: UpdatePWD,
+          meta: { title: '修改密码'}
         }
       ]
     },

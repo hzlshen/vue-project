@@ -46,9 +46,9 @@
               userInfo:null,//用户信息
               alertText: null, //提示的内容
               ruleForm: {
-                oldpassword: '',//旧密码
-                newpassword: '',//密码
-                password:'',//确认密码
+                oldpassword: '111111',//旧密码
+                newpassword: '666666',//密码
+                password:'666666',//确认密码
               },
               rules: {
                 oldpassword: [
