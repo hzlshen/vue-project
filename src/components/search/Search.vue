@@ -525,12 +525,20 @@
         getMore(index){
 
         },
-        //高级查询
+        //高级查询一级
         getValue(){
 
         },
         //获取三级列表
         comparval(){
+
+        },
+        //高级查询取消
+        queryCancel(){
+
+        },
+        //高级查询确定
+        determine(){
 
         },
         //方案名
@@ -564,6 +572,23 @@
         },
 
         //RIGHT 增删改查
+        //新增
+        addTr(){
+
+        },
+        //删除
+        deleteTr(){
+
+        },
+        //全部删除
+        AlldeleteTr(){
+
+        },
+        //插入
+        insertTr(){
+
+        },
+
 
       }
     }
