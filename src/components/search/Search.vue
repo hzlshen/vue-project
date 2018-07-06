@@ -512,11 +512,30 @@
               indexme: '', //这是查询列表index
               indexnum:null, //接口index
               moren:true, //默认方案显示隐藏
-
-
             }
         },
       methods:{
+        //select change 获取二级列表
+        getMore(index){
+
+        },
+        //高级查询
+        getValue(){
+
+        },
+        //获取三级列表
+        comparval(){
+
+        },
+        //方案名
+        projectName(){
+
+        },
+        //默认方案
+        checkClick(){
+
+        },
+
 
       }
     }
