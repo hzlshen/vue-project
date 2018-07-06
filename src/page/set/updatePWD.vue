@@ -68,7 +68,11 @@
         },
         methods:{
           submitForm(ruleForm){
-
+            if(valid){
+              this.$message({type:'warning',center:true,message:"修改成功!!!"})
+            }else{
+              this.$message({type:'warning',center:true,message:"请填写..."})
+            }
           }
         },
     }
