@@ -602,4 +602,44 @@
     }
 </script>
 <style scoped>
+  .el-dialog__body{
+  padding: 10px;
+}
+.el-dialog .el-input{
+  width: 100%!important;
+}
+.statusBottom{
+  width: 50%;
+  float: left;
+}
+.col-md-4{
+  width: 33.333%;
+  float: left;
+}
+.col-md-8{
+  width: 66.66%;
+  float: left;
+}
+.guolvList {
+  clear: both;
+}
+
+.guolvList ul {
+  padding: 0;
+}
+
+.guolvList ul li {
+  padding-left: 20px;
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+  list-style: none;
+}
+.active1 {
+  background: #f5f5f5;
+  color: #2EAEF0;
+}
+.el-dialog__footer{
+  padding: 10px 20px;
+}
 </style>
