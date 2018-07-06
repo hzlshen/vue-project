@@ -57,7 +57,7 @@
           // 基于准备好的dom，初始化echarts实例
           let myChart = this.$echarts.init(this.$refs.myChart);
           // 绘制图表
-          myChart.setOption({
+           myChart.setOption({
             title: { text: '在Vue中使用echarts' },
             tooltip: {},
             xAxis: {
