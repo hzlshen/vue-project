@@ -134,7 +134,7 @@
                   subNav:[
                     {
                       index:'/Structure',
-                      title:'组织架构'
+                      title:'平台管理'
                     },
                     {
                       icon: 'el-icon-star-off',
