@@ -266,7 +266,7 @@
 
           //高级查询
           fliterOrder(value){
-            alert(JSON.stringify(value),"这是高级查询组件传回来的...")
+            console.log(JSON.stringify(value),"这是高级查询组件传回来的...")
           },
 
           handleSizeChange(val) {
