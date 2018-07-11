@@ -1,7 +1,7 @@
 <template>
     <div class="batch-delete">
       <template>
-        <el-dialog title="批量删除" :visible.sync="dialogFromDelete" :before-close="dialog_close">
+        <el-dialog title="批量删除" :close-on-click-modal="false" :append-to-body="true" :close-on-press-escape="false" :visible.sync="dialogFromDelete" :before-close="dialog_close">
           <el-form :model="form">
 
             <el-form-item label="单据类型" :label-width="formLabelWidth">

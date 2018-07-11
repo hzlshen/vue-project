@@ -1,7 +1,7 @@
 <template>
     <div class="batch-statement">
       <template>
-        <el-dialog title="条件查询" :visible.sync="dialogFromStatement" :before-close="dialog_close" :modal-append-to-body="false">
+        <el-dialog title="条件查询" :close-on-click-modal="false" :append-to-body="true" :close-on-press-escape="false" :visible.sync="dialogFromStatement" :before-close="dialog_close" :modal-append-to-body="false">
           <el-form :model="form">
             <el-form-item label="业务日期" :label-width="formLabelWidth">
               <div class="block">

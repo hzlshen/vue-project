@@ -1,7 +1,7 @@
 <template>
     <div class="batch-UnAudit">
       <template>
-        <el-dialog title="批量反审核" :visible.sync="dialogFromUnAudit" :before-close="dialog_close">
+        <el-dialog title="批量反审核" :close-on-click-modal="false" :append-to-body="true" :close-on-press-escape="false" :visible.sync="dialogFromUnAudit" :before-close="dialog_close">
           <el-form :model="form">
             <el-form-item label="单据类型" :label-width="formLabelWidth">
               <el-select size="small" v-model="form.documentsType" placeholder="请选择活动区域">
