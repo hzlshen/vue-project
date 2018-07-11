@@ -23,20 +23,20 @@
             </el-form-item>
             <el-form-item label="平台" :label-width="formLabelWidth">
               <el-select size="small" v-model="form.platform" placeholder="请选择活动区域">
-                <el-option label="区域一" value="shanghai"></el-option>
-                <el-option label="区域二" value="beijing"></el-option>
+                <el-option label="微信" value="shanghai"></el-option>
+                <el-option label="支付宝" value="beijing"></el-option>
               </el-select>
             </el-form-item>
             <el-form-item label="单据状态" :label-width="formLabelWidth">
               <el-select size="small" v-model="form.documentsState" placeholder="请选择活动区域">
-                <el-option label="区域一" value="shanghai"></el-option>
-                <el-option label="区域二" value="beijing"></el-option>
+                <el-option label="审核" value="shanghai"></el-option>
+                <el-option label="保存" value="beijing"></el-option>
               </el-select>
             </el-form-item>
             <el-form-item label="对账状态" :label-width="formLabelWidth">
               <el-select size="small" v-model="form.checkState" placeholder="请选择活动区域">
-                <el-option label="保存" value="shanghai"></el-option>
-                <el-option label="区域二" value="beijing"></el-option>
+                <el-option label="未对账" value="shanghai"></el-option>
+                <el-option label="已对账" value="beijing"></el-option>
               </el-select>
             </el-form-item>
 
@@ -77,6 +77,7 @@
         },
         determine(){ //确定
           console.log(this.form);
+          this.$store.dispatch('dialogFromAudit')
         },
         dialog_close() {
           this.$store.dispatch('dialogFromAudit')

@@ -137,17 +137,6 @@
                       title:'平台管理'
                     },
                     {
-                      icon: 'el-icon-star-off',
-                      index:'11',
-                      title:'角色权限',
-                      subNav: [
-                        {
-                          title: '角色管理',
-                          index : '角色管理'
-                        }
-                      ]
-                    },
-                    {
                       index:'/UpdatePWD',
                       title:'修改密码'
                     },
