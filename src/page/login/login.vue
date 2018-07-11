@@ -89,7 +89,9 @@
           const that = this;
           this.$refs[formName].validate((valid) => {
             if (valid) {
-             lookOption(this.ruleForm.username,this.ruleForm.password,this.ruleForm.codeNumber).then(res=>{
+              this.$router.push('/chart');
+
+              lookOption(this.ruleForm.username,this.ruleForm.password,this.ruleForm.codeNumber).then(res=>{
                that.userInfo = res;
                //如果返回的值不正确，则弹出提示框，返回的值正确则进入home
                if(!that.userInfo.data){
