@@ -114,6 +114,7 @@
               disabled: true,
               radio: '1',
               dialogVisible: false,
+              rulesId:'',
               form: {
                 time: '',
                 platform:''
@@ -164,14 +165,15 @@
           },
           //执行对账
           clickAuto(){
+            if (this.form.platform == '') {
+              this.$message.error({message:"请选择平台",center: true});
+              return false
+            }
             if (this.form.time === '') {
               this.$message.error({message:"请选择业务日期",center: true});
               return false
             }
-//            if (this.reconDate === '') {
-//              this.$message.error({message:"请选择对账日期",center: true});
-//              return false
-//            }
+
             if (this.rulesId === '') {
               this.$message.error({message:"请选择对账规则",center: true});
               return false;
