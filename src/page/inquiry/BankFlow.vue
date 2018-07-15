@@ -34,14 +34,7 @@
                     prop="billNo"
                     label="单据编号"
                     width="200">
-                    <template slot-scope="scope">
-                      <el-button
-                        @click.native.prevent="getRowInfo(scope.row)"
-                        type="text"
-                        size="small">
-                        {{scope.row.billNo}}
-                      </el-button>
-                    </template>
+
                   </el-table-column>
                   <el-table-column
                     prop="platform"
