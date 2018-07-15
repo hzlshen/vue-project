@@ -92,16 +92,6 @@
           <el-button size="small" type="primary">退出</el-button>
         </el-row>
       </div>
-      <el-dialog
-        title="提示"
-        :visible.sync="dialogVisible"
-        width="30%"
-        :before-close="handleClose">
-        <el-progress :text-inside="true" :stroke-width="18" :percentage="80" color="rgba(142, 113, 199, 0.7)"></el-progress>
-        <span slot="footer" class="dialog-footer">
-        <el-button size="mini" @click="dialogVisible = false">关 闭</el-button>
-  </span>
-      </el-dialog>
     </div>
 </template>
 
