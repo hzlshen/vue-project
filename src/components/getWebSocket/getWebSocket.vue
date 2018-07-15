@@ -8,7 +8,6 @@
         <div style="margin-top:10px;height:15px;text-align:center">{{socketDatatext}}</div>
         <div slot="footer" class="dialog-footer">
           <el-button size="mini" type="primary" @click="determine" :disabled="guanbi">确 定</el-button>
-          <!-- <el-button size="mini" @click="cancel" :disabled="guanbi">取 消</el-button> -->
         </div>
       </el-dialog>
     </template>
@@ -37,18 +36,18 @@
       $route(to, from) {
         //由于路由的原因，现在还有一种websocket可能失效，从对账记录到订单列表：to  orderReceivable from verifyReceivablesRecord
         console.log(to);
-        if(to.fullPath =='/orderUpload'){
-          location.reload();
-        }
-        if(to.fullPath =='/transUpload'){
-          location.reload();
-        }
-        if(to.fullPath =='/verifyAutomate'){
-          location.reload();
-        }
-        if(to.fullPath =='/bankUpload'){
-          location.reload();
-        }
+//        if(to.fullPath =='/orderUpload'){
+//          location.reload();
+//        }
+//        if(to.fullPath =='/transUpload'){
+//          location.reload();
+//        }
+//        if(to.fullPath =='/verifyAutomate'){
+//          location.reload();
+//        }
+//        if(to.fullPath =='/bankUpload'){
+//          location.reload();
+//        }
         //到订单查询，除了自动对账界面和对账记录界面
         if(to.fullPath =='/orderReceivable'){
           if(from.fullPath !='/verifyAutomate'&&from.fullPath !='/verifyReceivablesRecord'){
