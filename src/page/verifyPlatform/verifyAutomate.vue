@@ -17,7 +17,7 @@
                 <el-row >
                   <el-col :md="24">
                     <el-form-item label="平台:">
-                      <el-select size="small" v-model="value5" multiple placeholder="请选择">
+                      <el-select size="small" v-model="value5" multiple collapse-tags placeholder="请选择">
                         <el-option
                           v-for="item in options"
                           :key="item.value"
@@ -63,8 +63,14 @@
               </el-form>
               <template>
                 <el-table
-                  :data="tableData"
-                  style="width: 100%">
+                  border
+                  ref="orderTable"
+                  :data="ruleList"
+                  highlight-current-row
+                  max-height="164"
+                  style="margin-top: 10px"
+                  tooltip-effect="dark"
+                  @row-click="rowClickPayment">
                   <el-table-column
                     type="index"
                     label="序号"
@@ -74,10 +80,9 @@
                     prop="name"
                     label="对账方案">
                   </el-table-column>
-                  <el-table-column
-                    label="选中">
+                  <el-table-column label="选中" width="136">
                     <template slot-scope="scope">
-                      <el-radio v-model="radio" :label="tableData[scope.$index].address"></el-radio>
+                      <el-radio class="radio" v-model="radio"  :label="scope.$index"  @change.native="getCurrentRow(scope.$index)" >&nbsp;</el-radio>
                     </template>
                   </el-table-column>
                 </el-table>
@@ -107,42 +112,44 @@
                 time: '',
               },
               options: [{
-                value: '选项1',
-                label: '黄金糕'
+                value: '1',
+                label: '支付宝'
               }, {
-                value: '选项2',
-                label: '双皮奶'
+                value: '2',
+                label: '微信'
               }, {
-                value: '选项3',
-                label: '蚵仔煎'
+                value: '3',
+                label: '天猫'
               }, {
-                value: '选项4',
-                label: '龙须面'
+                value: '5',
+                label: '京东'
               }, {
-                value: '选项5',
-                label: '北京烤鸭'
+                value: '9',
+                label: '美团'
               }],
               value5: [],
-              tableData: [{
-                date: '2016-05-02',
-                name: '王小虎',
-                address: '1'
-              }, {
-                date: '2016-05-04',
-                name: '王小虎',
-                address: '2'
-              }, {
-                date: '2016-05-01',
-                name: '王小虎',
-                address: '3'
-              }, {
-                date: '2016-05-03',
-                name: '王小虎',
-                address: '4'
-              }]
+              ruleList:[
+                {
+                  name:'方案一'
+                },
+                {
+                  name:'方案二'
+                }
+              ]
             }
         },
         methods:{
+          //点击事件
+          rowClickPayment(row) {
+            console.log(row.id)
+            this.rulesId = row.id;
+            this.$refs.orderTable.toggleRowSelection(row)
+            this.radio = this.ruleList.indexOf(row);
+          },
+          //选中
+          getCurrentRow(val) {
+            console.log(val)
+          },
           changeDisabled(){
               this.disabled = !this.disabled;
           },
