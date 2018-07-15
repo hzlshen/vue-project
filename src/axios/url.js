@@ -4,7 +4,8 @@
 export default {
   //接口代理配置
   Hallowmas:'http://jsonplaceholder.typicode.com/users',
-  commonLick:'../static/data/localData.json'
+  commonLick:'../static/data/localData.json',
+  ws:'ws://baidu.com'
 }
 
 //区分环境或者区分服务器

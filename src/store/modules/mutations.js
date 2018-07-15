@@ -42,6 +42,9 @@ export default {
   ['DIALOG_FROM_STATEMENT'](state){
     state.dialogFromStatement = !state.dialogFromStatement;
     console.log(state.dialogFromStatement);
-  }
+  },
+  ['DIALOGGET_WEB_SOCKET'](state) { //websocket
+    state.dialoggetWebSocket = !state.dialoggetWebSocket;
+  },
 
 }

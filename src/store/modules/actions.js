@@ -34,5 +34,8 @@ export default {
   },
   dialogFromStatement({commit}){//报表通用弹出层
     commit('DIALOG_FROM_STATEMENT')
-  }
+  },
+  dialoggetWebSocket({commit}){//websocket
+    commit('DIALOGGET_WEB_SOCKET')
+  },
 }

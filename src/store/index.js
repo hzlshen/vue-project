@@ -28,7 +28,7 @@ const state = {//存储状态
   dialogFromDifferences: false,//批量差异对帐
   dialogFromDelete: false,//批量删除
   dialogFromStatement: false,//报表通用弹出框
-
+  dialoggetWebSocket:false, //websocket
 }
 
 

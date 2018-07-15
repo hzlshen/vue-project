@@ -1,6 +1,7 @@
 <template>
     <div class="verify-automate">
       <h3 class="head_title">自动对账</h3>
+      <getWebSocket></getWebSocket>
       <template>
         <el-row>
           <el-button size="mini" type="primary" @click="changeDisabled" :disabled="!disabled">收款对账</el-button>
@@ -17,7 +18,7 @@
                 <el-row >
                   <el-col :md="24">
                     <el-form-item label="平台:">
-                      <el-select size="small" v-model="value5" multiple collapse-tags placeholder="请选择">
+                      <el-select size="small" v-model="form.platform" multiple collapse-tags placeholder="请选择">
                         <el-option
                           v-for="item in options"
                           :key="item.value"
@@ -93,7 +94,7 @@
       </template>
       <div class="execute-btn">
         <el-row>
-          <el-button size="small" @click="dialogVisible  = true" type="primary">执行对账</el-button>
+          <el-button size="small" @click="clickAuto" type="primary">执行对账</el-button>
           <el-button size="small" type="primary">退出</el-button>
         </el-row>
       </div>
@@ -101,8 +102,13 @@
 </template>
 
 <script>
+  import{mapState} from 'vuex'
+  import getWebSocket from "../../components/getWebSocket/getWebSocket"
     export default {
         name: 'verifyAutomate',
+        components:{
+          getWebSocket
+        },
         data () {
             return {
               disabled: true,
@@ -110,6 +116,7 @@
               dialogVisible: false,
               form: {
                 time: '',
+                platform:''
               },
               options: [{
                 value: '1',
@@ -130,9 +137,11 @@
               value5: [],
               ruleList:[
                 {
+                  id:'1',
                   name:'方案一'
                 },
                 {
+                  id:"2",
                   name:'方案二'
                 }
               ]
@@ -153,15 +162,21 @@
           changeDisabled(){
               this.disabled = !this.disabled;
           },
-          deleteRow(index){
-            console.log(index);
-          },
-          handleClose(done) {
-            this.$confirm('确认关闭？')
-              .then(_ => {
-                done();
-              })
-              .catch(_ => {});
+          //执行对账
+          clickAuto(){
+            if (this.form.time === '') {
+              this.$message.error({message:"请选择业务日期",center: true});
+              return false
+            }
+//            if (this.reconDate === '') {
+//              this.$message.error({message:"请选择对账日期",center: true});
+//              return false
+//            }
+            if (this.rulesId === '') {
+              this.$message.error({message:"请选择对账规则",center: true});
+              return false;
+            }
+            this.$store.dispatch('dialoggetWebSocket')
           }
         }
     }
