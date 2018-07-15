@@ -137,7 +137,7 @@
         this.socketStatus =''; //状态
         this.guanbi = false;
         this.socketSchedule =0;
-        location.reload();
+//        location.reload();
       },
       dialog_close() {
         this.$store.dispatch('dialoggetWebSocket')
