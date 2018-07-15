@@ -8,9 +8,11 @@ import 'normalize.css'
 import Axios from 'axios'
 import Elementui from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import moment from 'moment'
 import echarts from 'echarts'
 
 Vue.use(Elementui);
+Vue.use(moment);
 Vue.config.productionTip = false;
 Vue.prototype.$http = Axios;
 Vue.prototype.$echarts = echarts
