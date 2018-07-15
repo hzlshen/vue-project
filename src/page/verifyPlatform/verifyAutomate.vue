@@ -13,7 +13,7 @@
         <el-row :gutter="20">
           <el-col :span="12">
             <el-card class="box-card">
-              <h5>参数选择</h5>
+              <h3>参数选择</h3>
               <el-form :model="form">
                 <el-row >
                   <el-col :md="24">
@@ -55,7 +55,7 @@
           </el-col>
           <el-col :span="12">
             <el-card class="box-card">
-              <h5>规则选择</h5>
+              <h3>规则选择</h3>
               <el-form :model="form">
                 <el-row >
                   <el-button size="mini" type="primary">上移</el-button>

@@ -34,7 +34,7 @@
                     prop="billNo"
                     label="单据编号"
                     width="200">
-                  
+
                   </el-table-column>
                   <el-table-column
                     prop="platform"
