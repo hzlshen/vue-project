@@ -37,7 +37,7 @@
               </el-col>
               <el-col  :md="8" >
                 <el-form-item label="对账状态" :label-width="formLabelWidth">
-                  <el-select size="small" v-model="form.checkState" placeholder="请选择对账状态">
+                  <el-select disable size="small" v-model="form.checkState" placeholder="请选择对账状态">
                     <el-option label="全部" value="shanghai"></el-option>
                     <el-option label="未对账" value="UnSettled"></el-option>
                     <el-option label="部份对账" value="Part"></el-option>
@@ -49,7 +49,7 @@
             <el-row>
               <el-col :md="8">
                 <el-form-item label="是否差异处理" :label-width="formLabelWidth">
-                  <el-select size="small" v-model="form.differenceStatus" placeholder="请选择是否差异处理">
+                  <el-select disable size="small" v-model="form.differenceStatus" placeholder="请选择是否差异处理">
                     <el-option label="全部" value="shanghai"></el-option>
                     <el-option label="是" value="Y"></el-option>
                     <el-option label="否" value="N"></el-option>
@@ -58,7 +58,7 @@
               </el-col>
               <el-col :md="8">
                 <el-form-item label="退款状态" :label-width="formLabelWidth">
-                  <el-select size="small" v-model="form.refundStatus" placeholder="请选择退款状态">
+                  <el-select disable size="small" v-model="form.refundStatus" placeholder="请选择退款状态">
                     <el-option label="全部" value="shanghai"></el-option>
                     <el-option label="未退款" value="UnSettled"></el-option>
                     <el-option label="部分退款" value="Part"></el-option>
@@ -68,14 +68,14 @@
               </el-col>
               <el-col :md="8">
                 <el-form-item label="来源平台" :label-width="formLabelWidth">
-                  <el-input size="mini" v-model="form.platform" placeholder="请输入来源平台"></el-input>
+                  <el-input disable size="mini" v-model="form.platform" placeholder="请输入来源平台"></el-input>
                 </el-form-item>
               </el-col>
             </el-row>
             <el-row>
               <el-col :md="8">
                 <el-form-item label="销售公司" :label-width="formLabelWidth">
-                  <el-input size="mini" v-model="form.company" placeholder="请输入内容"></el-input>
+                  <el-input  disable size="mini" v-model="form.company" placeholder="请输入内容"></el-input>
                 </el-form-item>
               </el-col>
             </el-row>

@@ -118,7 +118,7 @@
                     label="订单总金额"
                     width="100">
                   </el-table-column>
-                
+
                 </el-table>
               </template>
             </el-tab-pane>
