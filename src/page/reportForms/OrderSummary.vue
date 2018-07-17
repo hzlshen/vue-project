@@ -229,6 +229,7 @@
                 platform: '',//平台
                 company: '',//公司
               },
+              currentPage4:0,
               loading: true,
               getLocalDataList: [],//请求的数据
             }
