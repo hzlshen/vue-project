@@ -227,6 +227,7 @@
 
 <script>
   import {getOrderReceivable} from '../../axios/api'
+  import moment from 'moment'
 
   import batchStatement from '../../components/filterBox/batchStatement'
     export default {
@@ -268,7 +269,9 @@
           },
           //数格式转换
           formatTime(row) { //转换时间
-            return new Date(row.businessDate);
+            if(row.businessDate){
+              return moment(row.businessDate).format("YYYY-MM-DD");
+            }
           },
         }
     }
