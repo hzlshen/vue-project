@@ -17,6 +17,7 @@
           highlight-current-row
           height="410"
           @row-click="handleSelectedRow"
+          @select="handleSelectionSingle"
           @selection-change="handleSelectionChange">
           <el-table-column
             type="selection"
@@ -161,7 +162,7 @@
           :page-sizes="[100, 200, 300, 400]"
           :page-size="100"
           layout="total, sizes, prev, pager, next, jumper"
-          :total="400">
+          :total="totals">
         </el-pagination>
       </div>
     </template>
@@ -187,7 +188,9 @@
         handSelectDataList:[],//选中的数据
         btnInfo:[],
         message: '',
+        totals:0,
         currentPage4: 4,
+        uuidList: [],
         treeData: {
           name: 'My Tree',
           children: [
@@ -252,6 +255,7 @@
           console.log(res);
           if(res.status === 200){
             this.getLocalDataList = res.data.rows;
+            this.totals = res.data.total;
             this.loading = false;
           }
 
@@ -269,11 +273,59 @@
       },
       //点击行
       handleSelectedRow(row){
-        this.$refs.OrderTable.toggleRowSelection(row);
+        if (row) {
+          var newId = row.billNo;
+          var selectArr = [];
+          this.getLocalDataList.forEach((value) => {
+            if (value.billNo === newId) {
+              selectArr.push(value);
+              if (typeof value.checked === 'undefined') {
+                this.$set(value, 'checked', true)
+              } else {
+                value.checked = !value.checked;
+              }
+            }
+
+          });
+          if (selectArr) {
+            selectArr.forEach((value) => {
+              this.$refs.OrderTable.toggleRowSelection(value, value.checked);
+            })
+          }
+        }
+      },
+      handleSelectionSingle(val) { //点击checkbox选中
+        if (val.length > 0) {
+          var listArr = [];
+          var item = val[val.length - 1];
+          var setNo = item.billNo;
+          this.getLocalDataList.forEach((value, index) => {
+            if (value.billNo === setNo) {
+              if (typeof value.checked === 'undefined') {
+                this.$set(value, 'checked', true);
+              } else {
+                value.checked = !value.checked;
+              }
+              listArr.push(value);
+            }
+          });
+          console.log(listArr);
+          listArr.forEach((value, index) => {
+            this.$refs.OrderTable.toggleRowSelection(value, value.checked);
+          })
+        }
       },
       //当选择项发生变化时会触发该事件
-      handleSelectionChange(val){
-        this.handSelectDataList = val;
+      handleSelectionChange(val,rows){
+        if (rows) {
+          rows.forEach((value, index) => {
+            if (this.uuidList.indexOf(value.id) === -1) {
+              this.uuidList.push(value.id)
+            }
+          })
+        } else {
+          this.uuidList = []
+        }
       },
 
       //数格式转换
