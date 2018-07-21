@@ -79,11 +79,11 @@
                   subNav:[
                     {
                       index: '/verifyReceivables',
-                      title: '收款手动对账'
+                      title: '收款对账'
                     },
                     {
                       index: '/verifyAutomate',
-                      title: '收款自动对账'
+                      title: '自动对账'
                     },
                     {
                       index:'/verifyBankStatement',

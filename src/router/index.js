@@ -50,7 +50,7 @@ export default new Router({
         {//订单应收
           path: '/orderReceivable',
           component: OrderReceivable,
-          meta: { title: '订单应收' },
+          meta: { title: '应收单据' },
         },
         {//交易流水
           path: '/transactionFlow',
@@ -84,12 +84,12 @@ export default new Router({
         {
           path: '/verifyAutomate',
           component: VerifyAutomate,
-          meta: { title: '收款自动对账' }
+          meta: { title: '自动对账' }
         },
         {//对账平台
           path: '/verifyReceivables',
           component: VerifyReceivables,
-          meta: { title: '收款手动对账' }
+          meta: { title: '收款对账' }
         },
         {//银行对账
           path: '/verifyBankStatement',
@@ -103,12 +103,12 @@ export default new Router({
         {//银行对账单记录
           path: '/verifyReceivablesRecord',
           component: VerifyReceivablesRecord,
-          meta: { title: '收款对账单记录' }
+          meta: { title: '收款对账记录' }
         },
         {//银行对账单记录
           path: '/verifyBankStatementRecord',
           component: VerifyBankStatementRecord,
-          meta: { title: '银行对账单记录' }
+          meta: { title: '银行对账记录' }
         },
         /**
          * reportForms报表
