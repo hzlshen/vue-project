@@ -1,3 +1,7 @@
+/**
+ * Created by 不动的推动者 on 2018/5/2.
+ */
+//
 import Vue from 'vue'
 import Router from 'vue-router'
 

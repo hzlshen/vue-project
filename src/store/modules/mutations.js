@@ -1,5 +1,5 @@
 /**
- * Created by 边城浪子刘三慢 on 2018/5/2.
+ * Created by 不动的推动者 on 2018/5/2.
  */
 import {
   COLLAPSE,
