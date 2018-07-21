@@ -171,6 +171,7 @@
 
 <script>
   import {mapState} from 'vuex'
+  import moment from 'moment'
   import {getOrderReceivable,getCompany} from '../../axios/api'
   import search from '../../components/search/Search'
   export default {
@@ -277,7 +278,9 @@
 
       //数格式转换
       formatTime(row) { //转换时间
-        return new Date(row.businessDate);
+        if(row.businessDate){
+          return moment(row.businessDate).format("YYYY-MM-DD");
+        }
       },
       formatStatus(row) { //单据状态
         return (row.status === 'Save' && '保存') || (row.status === 'Audited' && '审核');
