@@ -119,20 +119,11 @@
 
       //新增
       addPlat(){
-        var id = '';
-        this.$router.push('/addpayChannel')
+
       },
       //修改
       modify(){
-        if(this.selectId){
-          this.$router.push({
-            name: 'editpayChannel',
-            params: {id: this.selectId}
-          })
-        }else{
-          this.$message({center:true,type:'success',message:'请选择修改行'})
-        }
-
+        
       },
       //查询
       searchClick: function() {
