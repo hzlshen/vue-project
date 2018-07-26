@@ -191,28 +191,7 @@
 
           })
         },
-        //Duff装置
-        duff(rows){
-          console.log(rows);
-          let iterations = Math.floor(rows.length /8);
-          let leftover  = rows.length % 8;
-          let i = 0;
-          if(leftover > 0) {
-            do {
-              this.process(rows[i++]);
-            }while(--leftover > 0);
-          }
-          do {
-            this.process(rows[i++]);
-            this.process(rows[i++]);
-            this.process(rows[i++]);
-            this.process(rows[i++]);
-            this.process(rows[i++]);
-            this.process(rows[i++]);
-            this.process(rows[i++]);
-            this.process(rows[i++]);
-          }while(--iterations > 0);
-        },
+      
         process(row) {
           if(row.status === 'Audited'){
             row.status = 'Save'
