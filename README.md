@@ -1,5 +1,5 @@
 
-#基于vue-cli构建的财务后台管理系统(`vue2`+`vuex`+`axios`+`vue-router`+`element-ui`+`websocket`)
+#基于vue-cli构建的财务后台管理系统(`vue2`+`vuex`+`axios`+`vue-router`+`element-ui`+`echarts`+`websocket`)
 
 ## 注意：当前项目代码已经升级到2.0，均采用vue-cli搭建的程序
 
