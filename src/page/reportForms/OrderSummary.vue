@@ -281,7 +281,9 @@
           formatReconStatus(row) { //退款状态
             return (row.reconStatus === 'UnSettled' && '未退款') || (row.reconStatus === 'Part' && '部分退款') || (row.reconStatus === 'Completely' && '完全退款')
           },
-          formatOrderType(row) { //退款状态
+
+          formatOrderType(row) {
+            //退款状态
             return (row.orderType === '0' && '平台订单') || (row.orderType === '1' && '手工订单')
           },
         }
