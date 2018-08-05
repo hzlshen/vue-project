@@ -134,31 +134,6 @@
                     label="积分"
                     width="100">
                   </el-table-column>
-                  <el-table-column
-                    prop="platformCoupon"
-                    label="平台优惠卷"
-                    width="110">
-                  </el-table-column>
-                  <el-table-column
-                    prop="companyCoupon"
-                    label="公司优惠卷"
-                    width="110">
-                  </el-table-column>
-                  <el-table-column
-                    prop="insurance"
-                    label="保险"
-                    width="100">
-                  </el-table-column>
-                  <el-table-column
-                    prop="freight"
-                    label="运费"
-                    width="100">
-                  </el-table-column>
-                  <el-table-column
-                    prop="sellerPayment"
-                    label="买家支付金额"
-                    width="110">
-                  </el-table-column>
                 </el-table>
               </template>
             </el-tab-pane>
