@@ -7,7 +7,7 @@
         text-color="#fff"
         active-text-color="#fff"
         unique-opened router>
-        <template v-for="(item,index) in sidebarInfo">
+        <template v-for="(item) in sidebarInfo">
             <el-submenu :index="item.index" :key="item.index" v-if="item.subNav">
               <template slot="title">
                 <i :class="item.icon"></i>
@@ -15,7 +15,7 @@
               </template>
               <el-menu-item-group>
                 <!--<template slot="title">分组一</template>-->
-                <el-menu-item :index="list.index" v-for="(list,index) in item.subNav" :key="list.index">{{list.title}}</el-menu-item>
+                <el-menu-item :index="list.index" v-for="(list) in item.subNav" :key="list.index">{{list.title}}</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
             <el-menu-item :index="item.index" :key="item.index" v-else>
@@ -153,9 +153,6 @@
         ...mapState({
           collapse:state=>state.collapse
         }),
-//        collapse(){
-//          return this.$store.state.collapse
-//        },
       },
       methods:{
 

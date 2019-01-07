@@ -13,7 +13,6 @@
   export default {
         data () {
             return {
-//              verifyStatus: '',
               tabs:[
                 {label:'全部', name:'Whole'},
                 {label:'已对账', name:'Completely'},
