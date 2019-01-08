@@ -14,6 +14,7 @@ import Elementui from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import moment from 'moment'
 import echarts from 'echarts'
+import './components/tem/index'
 
 Vue.use(Elementui);
 Vue.use(moment);

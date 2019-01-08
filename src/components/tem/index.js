@@ -1,4 +1,5 @@
-import hzlInput from './hzInput.vue'
 import Vue from 'vue'
 
-Vue.use(hzlInput);
+import hzlInput from './hzlInput.vue'
+
+Vue.component('hzl-input',hzlInput);

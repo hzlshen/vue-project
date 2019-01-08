@@ -14,6 +14,7 @@
           <el-tabs type="border-card" v-model="activeName">
             <!--按钮-->
             <el-row>
+              <hzl-input @change="aaa"></hzl-input>
               <btnList></btnList>
             </el-row>
             <el-tab-pane label="全部" name="Whole">
@@ -264,7 +265,10 @@
           this.getLocalData()
         },
         methods:{
-
+          aaa(v) {
+            console.log(v);
+            
+          },
           //高级查询
           fliterOrder(value){
             console.log(JSON.stringify(value),"这是高级查询组件传回来的...")
