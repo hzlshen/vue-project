@@ -52,7 +52,7 @@
       </template>
 
       <template>
-        <div class="full">
+        <div class="full" @change="changeLangEvent">
           <span class="lan">{{language}}</span>
         </div>
       </template>
@@ -79,7 +79,7 @@
                   label:'公司二',
                 }
               ],
-              language: "en"
+              language: localStorage.getItem("lang") || "EN"
             }
         },
       mounted(){
@@ -92,6 +92,32 @@
       },
       methods:{
         ...mapActions(["getCollapse", "getCompanyValue"]),//简写
+         changeLangEvent() {
+             console.log(this.$i18n);
+             console.log(1111);
+              // this.baseLan()
+              if (this.language == "EN") {
+                localStorage.setItem("locale", "zh");
+                this.$i18n.locale = localStorage.getItem("locale");
+                this.$message({
+                  message: "切换为中文！",
+                  type: "success"
+                });
+                localStorage.setItem("lang", "ZH");
+                this.language = "ZH";
+                window.location.reload();
+              } else if (this.language == "ZH") {
+                localStorage.setItem("locale", "en");
+                this.$i18n.locale = localStorage.getItem("locale");
+                this.$message({
+                  message: "Switch to English!",
+                  type: "success"
+                });
+                localStorage.setItem("lang", "EN");
+                this.language = "EN";
+                window.location.reload();
+              }
+          }
       }
     }
 </script>
