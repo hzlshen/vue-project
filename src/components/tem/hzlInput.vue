@@ -5,19 +5,40 @@
 </template>
 <script>
 export default {
+  name: 'hzl-input',
   // value type size placeholder
-  props: ['inputValue','type','size','placeholder'],
+  // props: ['value','type','size','placeholder'],
+  props:{
+    type: {
+      type: String,
+      default: 'text'
+    },
+    inputValue:{
+      type: String,
+      default: ''
+    },
+    size: {
+      type: String,
+      default: "small"
+    },
+    placeholder: {
+      type: String,
+      default: '请输入...'
+    }
+  },
   data() {
     return {
-      inputValue: ''
     }
+  },
+  watch: {
+    
   },
   mounted() {
 
   },
   methods: {
     inputChange() {
-      this.$emit("input",this.inputValue)
+      this.$emit("change",this.inputValue)
     }
   }
 }
