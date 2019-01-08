@@ -5,6 +5,7 @@
 </template>
 <script>
 export default {
+  // value type size placeholder
   props: ['inputValue','type','size','placeholder'],
   data() {
     return {
