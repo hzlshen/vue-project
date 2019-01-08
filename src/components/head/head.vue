@@ -105,6 +105,7 @@
                 });
                 localStorage.setItem("lang", "ZH");
                 this.language = "ZH";
+                location.reload();
               } else if (this.language == "ZH") {
                 localStorage.setItem("locale", "en");
                 this.$i18n.locale = localStorage.getItem("locale");
@@ -114,6 +115,7 @@
                 });
                 localStorage.setItem("lang", "EN");
                 this.language = "EN";
+                location.reload();
               }
           }
       }
