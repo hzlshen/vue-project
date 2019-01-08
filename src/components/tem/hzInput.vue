@@ -1,11 +1,11 @@
 <template>
   <div>
-    <el-input :type="type" :size="size" v-model="inputValue" @change="inputChange"></el-input>
+    <el-input :type="type" :size="size" v-model="inputValue" :placeholder="placeholder" @change="inputChange"></el-input>
   </div>  
 </template>
 <script>
 export default {
-  props: ['inputValue','type','size'],
+  props: ['inputValue','type','size','placeholder'],
   data() {
     return {
       inputValue: ''
