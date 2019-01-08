@@ -4,7 +4,7 @@
     <div class="collapse-btn" @click="getCollapse">
       <i class="el-icon-menu"></i>
     </div>
-    <div class="logo">王者荣耀后台管理系统</div>
+    <div class="logo">{{$t('h.system')}}</div>
 
     <div class="company">
     <template >
