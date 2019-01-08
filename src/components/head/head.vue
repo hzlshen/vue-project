@@ -51,6 +51,11 @@
         </el-dropdown>
       </template>
 
+      <template>
+        <div class="full">
+          <span class="lan">{{language}}</span>
+        </div>
+      </template>
 
     </div>
   </header>
@@ -73,7 +78,8 @@
                   value: '选项2',
                   label:'公司二',
                 }
-              ]
+              ],
+              language: "en"
             }
         },
       mounted(){
@@ -90,5 +96,16 @@
     }
 </script>
 <style scoped>
-
+  .lan {
+    display: inline-block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    color: #428BCA;
+  }
 </style>
