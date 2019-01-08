@@ -16,17 +16,13 @@ import moment from 'moment'
 import echarts from 'echarts'
 import './components/template/index'
 
-import VueI18n from 'vue-i18n'
-
-Vue.use(VueI18n) // 全局挂载
+import { i18n } from './i18n/index'
 
 Vue.use(Elementui);
 Vue.use(moment);
 Vue.config.productionTip = false;
 Vue.prototype.$http = Axios;
 Vue.prototype.$echarts = echarts
-
-
 
 router.beforeEach((to, from, next) => {
   const user = localStorage.getItem('lz_userName');
@@ -45,6 +41,7 @@ new Vue({
   el: '#app',
   router,
   store,//使用store
+  i18n, //使用国际化
   components: { App },
   template: '<App/>'
 })
