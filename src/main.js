@@ -14,7 +14,7 @@ import Elementui from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import moment from 'moment'
 import echarts from 'echarts'
-import './components/tem/index'
+import './components/template/index'
 
 import VueI18n from 'vue-i18n'
 
