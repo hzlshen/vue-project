@@ -1,0 +1,92 @@
+[
+  {
+    "prop": "",
+    "label": "",
+    "width": "60",
+    "type":"selection"
+  },
+  {
+    "prop": "billNo",
+    "label": "单据编号",
+    "width": "200",
+    "type":""
+  },
+  {
+    "prop": "platform",
+    "label": "平台",
+    "width": "200",
+    "type":""
+  },
+  {
+    "prop": "billNo",
+    "label": "单据编号",
+    "width": "200",
+    "type":""
+  },
+  {
+    "prop": "billNo",
+    "label": "单据编号",
+    "width": "200",
+    "type":""
+  },
+  {
+    "prop": "billNo",
+    "label": "单据编号",
+    "width": "200",
+    "type":""
+  },
+  {
+    "prop": "billNo",
+    "label": "单据编号",
+    "width": "200",
+    "type":""
+  },
+  {
+    "prop": "billNo",
+    "label": "单据编号",
+    "width": "200",
+    "type":""
+  },
+  {
+    "prop": "billNo",
+    "label": "单据编号",
+    "width": "200",
+    "type":""
+  },
+  {
+    "prop": "billNo",
+    "label": "单据编号",
+    "width": "200",
+    "type":""
+  },
+  {
+    "prop": "billNo",
+    "label": "单据编号",
+    "width": "200",
+    "type":""
+  },
+  {
+    "prop": "billNo",
+    "label": "单据编号",
+    "width": "200",
+    "type":""
+  },
+  {
+    "prop": "billNo",
+    "label": "单据编号",
+    "width": "200",
+    "type":""
+  },
+  {
+    "prop": "billNo",
+    "label": "单据编号",
+    "width": "200",
+    "type":""
+  },
+  {
+    "prop": "billNo",
+    "label": "单据编号",
+    "width": "200",
+    "type":""
+  }
+]
