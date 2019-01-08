@@ -12,6 +12,7 @@
 </template>
 <script>
 export default {
+  name: "hzl-select",
   props: {
     value: {
       type: String,
