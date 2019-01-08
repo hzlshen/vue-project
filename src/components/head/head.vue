@@ -52,7 +52,7 @@
       </template>
 
       <template>
-        <div class="full" @change="changeLangEvent">
+        <div class="full" @click="changeLangEvent()">
           <span class="lan">{{language}}</span>
         </div>
       </template>
@@ -105,7 +105,6 @@
                 });
                 localStorage.setItem("lang", "ZH");
                 this.language = "ZH";
-                window.location.reload();
               } else if (this.language == "ZH") {
                 localStorage.setItem("locale", "en");
                 this.$i18n.locale = localStorage.getItem("locale");
@@ -115,7 +114,6 @@
                 });
                 localStorage.setItem("lang", "EN");
                 this.language = "EN";
-                window.location.reload();
               }
           }
       }
