@@ -41,7 +41,7 @@
                 {
                   icon: 'el-icon-setting',
                   index: 'chart',
-                  title: '我的账户'
+                  title: this.$t('h.account')
                 },
                 /**
                  * inquiry 原始单据
@@ -49,7 +49,7 @@
                 {
                   icon: 'el-icon-tickets',
                   index:'1',
-                  title: '原始单据',
+                  title: this.$t('h.invoice'),
                   subNav:[
                     {
                       index:'/orderReceivable',
@@ -75,7 +75,7 @@
                 {
                   icon: 'el-icon-date',
                   index:'2',
-                  title: '财务对账',
+                  title: this.$t('h.reconciliation'),
                   subNav:[
                     {
                       index: '/verifyReceivables',
@@ -96,7 +96,7 @@
                  * **/
                 {
                   icon: 'el-icon-goods',
-                  title: '对账记录',
+                  title: this.$t('h.record'),
                   index:'3',
                   subNav:[
                     {
@@ -114,7 +114,7 @@
                  * **/
                 {
                   icon: 'el-icon-star-off',
-                  title: '月结报表',
+                  title: this.$t('h.report'),
                   index:'4',
                   subNav:[
                     {
@@ -129,7 +129,7 @@
                 },
                 {
                   icon: 'el-icon-more',
-                  title: '系统设置',
+                  title: this.$t('h.setting'),
                   index:'5',
                   subNav:[
                     {

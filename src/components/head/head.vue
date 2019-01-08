@@ -21,7 +21,7 @@
     <div class="top-nav">
       <!--全屏显示-->
       <template>
-        <el-tooltip class="full" effect="dark" content="全屏显示" placement="bottom">
+        <el-tooltip class="full" effect="dark" :content="$t('h.full')" placement="bottom">
           <div>
             <i class="el-icon-rank"></i>
           </div>
