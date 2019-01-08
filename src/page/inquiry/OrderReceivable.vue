@@ -14,7 +14,6 @@
           <el-tabs type="border-card" v-model="activeName">
             <!--按钮-->
             <el-row>
-              <hzl-input></hzl-input>
               <btnList></btnList>
             </el-row>
             <el-tab-pane label="全部" name="Whole">
