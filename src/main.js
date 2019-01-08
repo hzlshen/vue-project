@@ -16,7 +16,7 @@ import moment from 'moment'
 import echarts from 'echarts'
 import './components/template/index'
 
-import { i18n } from './i18n/index'
+import { i18n } from './i18n/index' //国际化
 
 Vue.use(Elementui);
 Vue.use(moment);
