@@ -16,6 +16,10 @@ import moment from 'moment'
 import echarts from 'echarts'
 import './components/tem/index'
 
+import VueI18n from 'vue-i18n'
+
+Vue.use(VueI18n) // 全局挂载
+
 Vue.use(Elementui);
 Vue.use(moment);
 Vue.config.productionTip = false;
