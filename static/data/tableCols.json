@@ -38,25 +38,25 @@
   {
     "prop": "businessDate",
     "label": "业务日期",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
     "prop": "settleStatus",
     "label": "对账状态",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
     "prop": "settleAmount",
     "label": "已对账金额",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
     "prop": "unsettleAmount",
     "label": "未对账金额",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
@@ -80,73 +80,73 @@
   {
     "prop": "reconStatus",
     "label": "退款状态",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
     "prop": "unsettlementMoney",
     "label": "未退款金额",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
     "prop": "settlementMoney",
     "label": "已退款金额",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
     "prop": "orderType",
     "label": "单据类型",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
     "prop": "orderTotalAmount",
     "label": "订单总金额",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
     "prop": "commission",
     "label": "佣金",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
     "prop": "integral",
     "label": "积分",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
     "prop": "platformCoupon",
     "label": "平台优惠卷",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
     "prop": "companyCoupon",
     "label": "公司优惠卷",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
     "prop": "insurance",
     "label": "保险",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
     "prop": "freight",
     "label": "运费",
-    "width": "100",
+    "width": "110",
     "type":""
   },
   {
     "prop": "sellerPayment",
     "label": "买家支付金额",
-    "width": "100",
+    "width": "120",
     "type":""
   }
 ]
