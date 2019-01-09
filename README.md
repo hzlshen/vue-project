@@ -55,7 +55,7 @@ npm run build
 │   └── main.js        // Webpack 预编译入口
 </pre>
 
-<br/>
+
 ###项目截图
 <br/>
 ![](https://github.com/hzlshen/Imgage_box/blob/master/vue-project1.png)
