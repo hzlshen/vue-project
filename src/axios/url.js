@@ -5,6 +5,7 @@ export default {
   //接口代理配置
   Hallowmas:'http://jsonplaceholder.typicode.com/users',
   commonLick:'../static/data/localData.json',
+  cols:'../static/data/tableCols.json',
   ws:'ws://baidu.com'
 }
 
