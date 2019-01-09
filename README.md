@@ -54,7 +54,8 @@ npm run build
 │   ├── axios          // ajax url 放置
 │   ├── components     // 各种组件
 │   ├── images         // 图片文件夹
-│   ├── page           // 各种页面
+│   ├── i18n           // 国际化文件夹
+│   ├── page           // 各种页面
 │   ├── router         // 页面路由
 │   ├── store          // vuex状态管理器
 │   ├── style          // 样式文件
