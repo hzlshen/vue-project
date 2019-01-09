@@ -34,6 +34,10 @@ export default {
     loading: {
       type: Boolean,
       default: false
+    },
+    height: {
+      type: [Array,Number],
+      default: '410'
     }
   },
   data() {
