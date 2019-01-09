@@ -19,7 +19,7 @@
             <el-tab-pane label="全部" name="Whole">
               <template>
                 <hzl-table
-                :data="getLocalDataList"
+                :DataList="getLocalDataList"
                 :height="420"
                 :cols="colsData"
                 >
