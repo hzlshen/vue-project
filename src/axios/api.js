@@ -39,6 +39,14 @@ export const getOrderReceivable = ()=>fetch({
   }
 });
 
+//cols title
+export const getCols = ()=>fetch({
+  url: api.cols,
+  method: 'get',
+  params: {
+  }
+});
+
 //审核 批量审核audit
 export const audit = (data)=>fetch({
   url: '',
