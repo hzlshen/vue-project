@@ -18,7 +18,14 @@
             </el-row>
             <el-tab-pane label="全部" name="Whole">
               <template>
-                <el-table
+                <hzl-table
+                :DataList="getLocalDataList"
+                :height="420"
+                :loading="loading"
+                :cols="colsData"
+                >
+                </hzl-table>
+                <!-- <el-table
                   border
                   v-loading="loading"
                   ref="OrderTable"
@@ -166,7 +173,7 @@
                     label="买家支付金额"
                     width="110">
                   </el-table-column>
-                </el-table>
+                </el-table> -->
               </template>
             </el-tab-pane>
             <el-tab-pane label="已对账" name="Completely">已对账</el-tab-pane>
@@ -195,7 +202,7 @@
 <script>
   import {mapState} from 'vuex'
   import moment from 'moment'
-  import {getOrderReceivable,getCompany} from '../../axios/api'
+  import {getOrderReceivable,getCompany, getCols} from '../../axios/api'
   import search from '../../components/search/Search'
   import batchAudit from '../../components/filterBox/batchAudit'
   import batchUnAudit from '../../components/filterBox/batchUnAudit'
@@ -217,6 +224,7 @@
               loading: true,
               activeName: 'Whole',
               getLocalDataList:[],//请求的数据
+              colsData: [],
               handSelectDataList:[],//选中的数据
               btnInfo:[],
               message: '',
@@ -262,6 +270,10 @@
         },
         mounted(){
           this.getLocalData()
+          this.colsUpate()
+        },
+        created() {
+          
         },
         methods:{
 
@@ -285,6 +297,17 @@
                console.log(res);
                if(res.status === 200){
                  this.getLocalDataList = res.data.rows;
+                 this.loading = false;
+               }
+
+             })
+           },
+           /*请求数据*/
+           colsUpate(){
+             getCols().then(res=>{
+               console.log(res.data);
+               if(res.status === 200){
+                 this.ColsData = res.data;
                  this.loading = false;
                }
 
