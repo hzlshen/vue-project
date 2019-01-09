@@ -19,9 +19,8 @@
             <el-tab-pane label="全部" name="Whole">
               <template>
                 <hzl-table
-                :DataList="getLocalDataList"
+                :data="getLocalDataList"
                 :height="420"
-                :loading="loading"
                 :cols="colsData"
                 >
                 </hzl-table>
@@ -306,11 +305,8 @@
            colsUpate(){
              getCols().then(res=>{
                console.log(res.data);
-               if(res.status === 200){
-                 this.ColsData = res.data;
+                 this.colsData = res.data;
                  this.loading = false;
-               }
-
              })
            },
 
