@@ -14,6 +14,7 @@
         :label="item.label"
         :prop="item.prop"
         :width="item.width"
+        :type="item.type"
         >
       </el-table-column>
     </el-table>  
