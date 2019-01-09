@@ -18,75 +18,135 @@
     "type":""
   },
   {
-    "prop": "billNo",
-    "label": "单据编号",
-    "width": "200",
+    "prop": "orderNo",
+    "label": "平台订单号",
+    "width": "250",
     "type":""
   },
   {
-    "prop": "billNo",
-    "label": "单据编号",
-    "width": "200",
+    "prop": "totalAmount",
+    "label": "总金额",
+    "width": "80",
     "type":""
   },
   {
-    "prop": "billNo",
-    "label": "单据编号",
-    "width": "200",
+    "prop": "status",
+    "label": "单据状态",
+    "width": "90",
     "type":""
   },
   {
-    "prop": "billNo",
-    "label": "单据编号",
-    "width": "200",
+    "prop": "businessDate",
+    "label": "业务日期",
+    "width": "100",
     "type":""
   },
   {
-    "prop": "billNo",
-    "label": "单据编号",
-    "width": "200",
+    "prop": "settleStatus",
+    "label": "对账状态",
+    "width": "100",
     "type":""
   },
   {
-    "prop": "billNo",
-    "label": "单据编号",
-    "width": "200",
+    "prop": "settleAmount",
+    "label": "已对账金额",
+    "width": "100",
     "type":""
   },
   {
-    "prop": "billNo",
-    "label": "单据编号",
-    "width": "200",
+    "prop": "unsettleAmount",
+    "label": "未对账金额",
+    "width": "100",
     "type":""
   },
   {
-    "prop": "billNo",
-    "label": "单据编号",
-    "width": "200",
+    "prop": "differenceProcessingStatus",
+    "label": "差异处理状态",
+    "width": "110",
     "type":""
   },
   {
-    "prop": "billNo",
-    "label": "单据编号",
-    "width": "200",
+    "prop": "differenceProcessingAmount",
+    "label": "差异处理金额",
+    "width": "110",
     "type":""
   },
   {
-    "prop": "billNo",
-    "label": "单据编号",
-    "width": "200",
+    "prop": "differenceProcessingRamarks",
+    "label": "差异处理原因",
+    "width": "130",
     "type":""
   },
   {
-    "prop": "billNo",
-    "label": "单据编号",
-    "width": "200",
+    "prop": "reconStatus",
+    "label": "退款状态",
+    "width": "100",
     "type":""
   },
   {
-    "prop": "billNo",
-    "label": "单据编号",
-    "width": "200",
+    "prop": "unsettlementMoney",
+    "label": "未退款金额",
+    "width": "100",
+    "type":""
+  },
+  {
+    "prop": "settlementMoney",
+    "label": "已退款金额",
+    "width": "100",
+    "type":""
+  },
+  {
+    "prop": "orderType",
+    "label": "单据类型",
+    "width": "100",
+    "type":""
+  },
+  {
+    "prop": "orderTotalAmount",
+    "label": "订单总金额",
+    "width": "100",
+    "type":""
+  },
+  {
+    "prop": "commission",
+    "label": "佣金",
+    "width": "100",
+    "type":""
+  },
+  {
+    "prop": "integral",
+    "label": "积分",
+    "width": "100",
+    "type":""
+  },
+  {
+    "prop": "platformCoupon",
+    "label": "平台优惠卷",
+    "width": "100",
+    "type":""
+  },
+  {
+    "prop": "companyCoupon",
+    "label": "公司优惠卷",
+    "width": "100",
+    "type":""
+  },
+  {
+    "prop": "insurance",
+    "label": "保险",
+    "width": "100",
+    "type":""
+  },
+  {
+    "prop": "freight",
+    "label": "运费",
+    "width": "100",
+    "type":""
+  },
+  {
+    "prop": "sellerPayment",
+    "label": "买家支付金额",
+    "width": "100",
     "type":""
   }
 ]
