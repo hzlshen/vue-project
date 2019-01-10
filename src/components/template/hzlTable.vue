@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- ref="OrderTable -->
     <el-table 
       border
       :data="DataList"
