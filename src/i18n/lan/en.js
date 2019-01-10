@@ -8,4 +8,12 @@ export const h = {
   report: "report",
   setting: "Settings",
   login: "login",
+  tips: "Username and password are filled in casually",
+  administrator: "administrator",
+  placeUser: "please enter user name",
+  palcePass: "Please enter your password",
+  palceCode: "please enter verification code",
+  accounts: "accounts",
+  password: "password",
+  code: "Verification code"
 }

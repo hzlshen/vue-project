@@ -1,6 +1,6 @@
 <template>
     <div class="loginContainer">
-      <div class="loginTitle">后台管理系统</div>
+      <div class="loginTitle">{{$t('h.system')}}</div>
       <div class="loginForm">
         <el-form
           :model="ruleForm" :rules="rules" ref="ruleForm" label-width="0px" class="demo-ruleForm">
@@ -8,20 +8,20 @@
             <el-input
               v-model="ruleForm.username"
               size="small"
-              placeholder="账号"></el-input>
+              :placeholder="$t('h.accounts')"></el-input>
           </el-form-item>
           <el-form-item prop="password">
             <el-input
               v-model="ruleForm.password"
               type="password"
               size="small"
-              placeholder="密码">
+              :placeholder="$t('h.password')">
             </el-input>
           </el-form-item>
           <el-form-item prop="mobileCode">
             <div class="captcha-wrap el-form-item">
               <el-input
-                placeholder="验证码"
+                :placeholder="$t('h.code')"
                 size="small"
                 maxlength="6"
                 v-model="ruleForm.codeNumber"
@@ -32,9 +32,9 @@
             </div>
           </el-form-item>
           <div class="login-btn">
-            <el-button type="primary" @click="submitForm('ruleForm')">登录</el-button>
+            <el-button type="primary" @click="submitForm('ruleForm')">{{$t('h.login')}}</el-button>
           </div>
-          <p style="font-size:12px;line-height:30px;color:#999;">Tips : 用户名和密码随便填。</p>
+          <p style="font-size:12px;line-height:30px;color:#999;">Tips:{{$t('h.tips')}}</p>
         </el-form>
       </div>
     </div>
@@ -51,19 +51,19 @@
               userInfo:null,//用户信息
               alertText: null, //提示的内容
               ruleForm: {
-                username: '管理员',//账号
+                username: this.$t('h.administrator'),//账号
                 password: '123456',//密码
                 codeNumber:'wyrf',//验证码
               },
               rules: {
                 username: [
-                  { required: true, message: '请输入用户名', trigger: 'blur' }
+                  { required: true, message: this.$t('h.placeUser'), trigger: 'blur' }
                 ],
                 password: [
-                  { required: true, message: '请输入密码', trigger: 'blur' }
+                  { required: true, message: this.$t('h.palcePass'), trigger: 'blur' }
                 ],
                 codeNumber: [
-                  { required: true, message: '请输入验证码', trigger: 'blur'}
+                  { required: true, message: this.$t('h.palceCode'), trigger: 'blur'}
                 ]
               }
             }
