@@ -6,5 +6,6 @@ export const h = {
   reconciliation: "财务对账",
   record: "对账记录",
   report: "月结报表",
-  setting: "系统设置"
+  setting: "系统设置",
+  login: "登录",
 }

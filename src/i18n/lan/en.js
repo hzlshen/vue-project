@@ -6,5 +6,6 @@ export const h = {
   reconciliation: "Statement",
   record: "recording",
   report: "report",
-  setting: "Settings"
+  setting: "Settings",
+  login: "login",
 }
