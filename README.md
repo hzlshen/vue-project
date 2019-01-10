@@ -6,34 +6,47 @@
 
 -------
 
-###安装
+### 本demo项目可以学到:
+    1、学会使用vue-cli2.0构建项目.
+    2、基于(pomise)封装axios的get、post等http请求.
+    3、学会使用vue-router实现页面跳转带参.
+    4、学会使用vuex状态管理.
+    5、配套element-ui(主要对table的操作多)
+    6、对elementui进行二次封装组件,提高复用性
+    7、略微涉及echarts作图标分析
+    8、使用websocket监听ele进度条状态
+    9、使用vue-i18n实现国际化--中英文切换
+    
 
-项目地址：（`git clone`）
+#### 安装
+
+#### 项目地址：
+（`git clone`）
 
 ```shell
 git clone https://github.com/hzlshen/vue-project.git
 ```
 
-通过`npm`安装本地服务第三方依赖模块(需要已安装[Node.js](https://nodejs.org/))
+#### 通过`npm`安装本地服务第三方依赖模块(需要已安装[Node.js](https://nodejs.org/))
 
 ```
 npm install
 ```
 
-启动服务(http://localhost:8080)
+#### 启动服务(http://localhost:8080)
 
 ```
 npm run dev
 ```
 
-发布代码
+#### 发布代码
 ```
 npm run build
 ```
 
-###开发
+#### 开发
 
-###目录结构
+#### 目录结构
 <pre>
 .
 ├── README.md           
