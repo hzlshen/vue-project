@@ -15,6 +15,7 @@
     "element-ui": "^2.3.5",
     "moment": "^2.22.2",
     "normalize.css": "^8.0.0",
+    "url-parse": "^1.4.4",
     "vue": "^2.5.2",
     "vue-i18n": "^8.7.0",
     "vue-router": "^3.0.1",
