@@ -6,7 +6,7 @@
 
 -------
 
-### 本demo项目可以学到:
+### 本项目可以学到:
     1、学会使用vue-cli2.0构建项目.
     2、基于(pomise)封装axios的get、post等http请求.
     3、学会使用vue-router实现页面跳转带参.
