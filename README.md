@@ -8,21 +8,13 @@
 
 ### 本demo项目可以学到:
     1、学会使用vue-cli2.0构建项目.
-    <br/>
     2、基于(pomise)封装axios的get、post等http请求.
-    <br/>
     3、学会使用vue-router实现页面跳转带参.
-    <br/>
     4、学会使用vuex状态管理.
-    <br/>
     5、配套element-ui(主要对table的操作多)
-    <br/>
     6、对elementui进行二次封装组件,提高复用性
-    <br/>
     7、略微涉及echarts作图标分析
-    <br/>
     8、使用websocket监听ele进度条状态
-    <br/>
     9、使用vue-i18n实现国际化--中英文切换
     
 
