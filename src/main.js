@@ -24,7 +24,11 @@ Vue.config.productionTip = false;
 Vue.prototype.$http = Axios;
 Vue.prototype.$echarts = echarts
 
+import NProgress from 'nprogress' // Progress 进度条
+import 'nprogress/nprogress.css'// Progress 进度条样式
+
 router.beforeEach((to, from, next) => {
+  NProgress.start()
   const user = localStorage.getItem('lz_userName');
   const pass = localStorage.getItem('lz_passNumber');
    if (!user && !pass && to.path !== '/login') { // 检查路径用户是否即将进入我们的 chart 路径
@@ -34,6 +38,9 @@ router.beforeEach((to, from, next) => {
        localStorage.setItem('lz_passNumber', pass);
        next()
    }
+})
+router.afterEach(() => {
+  NProgress.done() // 结束Progress
 })
 
 /* eslint-disable no-new */
