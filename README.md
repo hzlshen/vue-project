@@ -16,6 +16,7 @@
     7、略微涉及echarts作图标分析
     8、使用websocket监听ele进度条状态
     9、使用vue-i18n实现国际化--中英文切换
+    10、使用Ngprogress做加载,类似github loading bar
     
 
 #### 安装
