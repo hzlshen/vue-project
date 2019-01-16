@@ -1,2 +1,0 @@
-webpackJsonp([16],{Atll:function(e,t){},h0QG:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticClass:"verify-receivables"},[this._v("\n  收款对账\n")])},staticRenderFns:[]};var a=n("VU/8")({name:"verifyReceivables",data:function(){return{}}},r,!1,function(e){n("Atll")},"data-v-250dcebb",null);t.default=a.exports}});
-//# sourceMappingURL=16.8078934cda22d8ac5b6d.js.map
