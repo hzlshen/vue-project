@@ -18,160 +18,44 @@
             </el-row>
             <el-tab-pane label="全部" name="Whole">
               <template>
-                <el-table
-                  border
-                  v-loading="loading"
-                  ref="OrderTable"
-                  :data="getLocalDataList"
-                  highlight-current-row
-                  height="410"
-                  @row-click="handleSelectedRow"
-                  @selection-change="handleSelectionChange">
-                  <el-table-column
-                    type="selection"
-                    width="60">
-                  </el-table-column>
-                  <el-table-column
-                    prop="billNo"
-                    label="单据编号"
-                    width="200">
-                    <template slot-scope="scope">
-                      <el-button
-                        @click.native.prevent="getRowInfo(scope.row)"
-                        type="text"
-                        size="small">
-                        {{scope.row.billNo}}
-                      </el-button>
-                    </template>
-                  </el-table-column>
-                  <el-table-column
-                    prop="platform"
-                    label="平台"
-                    width="200">
-                  </el-table-column>
-                  <el-table-column
-                    prop="orderNo"
-                    label="平台订单号"
-                    width="250">
-                  </el-table-column>
-                  <el-table-column
-                    prop="totalAmount"
-                    label="总金额"
-                    width="80">
-                  </el-table-column>
-                  <el-table-column
-                    prop="status"
-                    label="单据状态"
-                    width="90"
-                    :formatter="formatStatus">
-                  </el-table-column>
-                  <el-table-column
-                    prop="businessDate"
-                    label="业务日期"
-                    width="100"
-                    :formatter="formatTime">
-                  </el-table-column>
-                  <el-table-column
-                    prop="settleStatus"
-                    label="对账状态"
-                    width="100"
-                    :formatter="formatSettleStatus">
-                  </el-table-column>
-                  <el-table-column
-                    prop="settleAmount"
-                    label="已对账金额"
-                    width="100">
-                  </el-table-column>
-                  <el-table-column
-                    prop="unsettleAmount"
-                    label="未对账金额"
-                    width="100">
-                  </el-table-column>
-                  <el-table-column
-                    prop="differenceProcessingStatus"
-                    label="差异处理状态"
-                    width="110"
-                    :formatter="formatDifferenceProcessingStatus">
-                  </el-table-column>
-                  <el-table-column
-                    prop="differenceProcessingAmount"
-                    label="差异处理金额"
-                    width="110">
-                  </el-table-column>
-                  <el-table-column
-                    prop="differenceProcessingRamarks"
-                    label="差异处理原因"
-                    width="130">
-                  </el-table-column>
-                  <el-table-column
-                    prop="reconStatus"
-                    label="退款状态"
-                    width="100"
-                    :formatter="formatReconStatus">
-                  </el-table-column>
-                  <el-table-column
-                    prop="unsettlementMoney"
-                    label="未退款金额"
-                    width="100">
-                  </el-table-column>
-                  <el-table-column
-                    prop="settlementMoney"
-                    label="已退款金额"
-                    width="100">
-                  </el-table-column>
-
-                  <el-table-column
-                    prop="orderType"
-                    label="单据类型"
-                    width="100"
-                    :formatter="formatOrderType">
-                  </el-table-column>
-                  <el-table-column
-                    prop="orderTotalAmount"
-                    label="订单总金额"
-                    width="100">
-                  </el-table-column>
-                  <el-table-column
-                    prop="commission"
-                    label="佣金"
-                    width="100">
-                  </el-table-column>
-                  <el-table-column
-                    prop="integral"
-                    label="积分"
-                    width="100">
-                  </el-table-column>
-                  <el-table-column
-                    prop="platformCoupon"
-                    label="平台优惠卷"
-                    width="110">
-                  </el-table-column>
-                  <el-table-column
-                    prop="companyCoupon"
-                    label="公司优惠卷"
-                    width="110">
-                  </el-table-column>
-                  <el-table-column
-                    prop="insurance"
-                    label="保险"
-                    width="100">
-                  </el-table-column>
-                  <el-table-column
-                    prop="freight"
-                    label="运费"
-                    width="100">
-                  </el-table-column>
-                  <el-table-column
-                    prop="sellerPayment"
-                    label="买家支付金额"
-                    width="110">
-                  </el-table-column>
-                </el-table>
+                <hzl-table
+                :DataList="getLocalDataList"
+                :height="420"
+                :cols="colsData"
+                >
+                </hzl-table>
               </template>
             </el-tab-pane>
-            <el-tab-pane label="已对账" name="Completely">已对账</el-tab-pane>
-            <el-tab-pane label="部份对账" name="Part">部份对账</el-tab-pane>
-            <el-tab-pane label="未对账" name="UnSettled">未对账</el-tab-pane>
+            <el-tab-pane label="已对账" name="Completely">
+              <template>
+                <hzl-table
+                :DataList="getLocalDataList"
+                :height="420"
+                :cols="colsData"
+                >
+                </hzl-table>
+              </template>
+            </el-tab-pane>
+            <el-tab-pane label="部份对账" name="Part">
+              <template>
+                <hzl-table
+                :DataList="getLocalDataList"
+                :height="420"
+                :cols="colsData"
+                >
+                </hzl-table>
+              </template>
+            </el-tab-pane>
+            <el-tab-pane label="未对账" name="UnSettled">
+              <template>
+                <hzl-table
+                :DataList="getLocalDataList"
+                :height="420"
+                :cols="colsData"
+                >
+                </hzl-table>
+              </template>
+            </el-tab-pane>
           </el-tabs>
         </template>
       </div>
@@ -195,7 +79,7 @@
 <script>
   import {mapState} from 'vuex'
   import moment from 'moment'
-  import {getOrderReceivable,getCompany} from '../../axios/api'
+  import {getOrderReceivable,getCompany, getCols} from '../../axios/api'
   import search from '../../components/search/Search'
   import batchAudit from '../../components/filterBox/batchAudit'
   import batchUnAudit from '../../components/filterBox/batchUnAudit'
@@ -217,6 +101,7 @@
               loading: true,
               activeName: 'Whole',
               getLocalDataList:[],//请求的数据
+              colsData: [],
               handSelectDataList:[],//选中的数据
               btnInfo:[],
               message: '',
@@ -262,6 +147,10 @@
         },
         mounted(){
           this.getLocalData()
+          this.colsUpate()
+        },
+        created() {
+          
         },
         methods:{
 
@@ -288,6 +177,14 @@
                  this.loading = false;
                }
 
+             })
+           },
+           /*请求数据*/
+           colsUpate(){
+             getCols().then(res=>{
+               console.log(res.data);
+                 this.colsData = res.data;
+                 this.loading = false;
              })
            },
 

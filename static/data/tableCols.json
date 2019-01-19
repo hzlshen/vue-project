@@ -1,0 +1,129 @@
+[
+  {
+    "prop": "",
+    "label": "",
+    "width": "60",
+    "type":"selection"
+  },
+  {
+    "prop": "billNo",
+    "label": "单据编号",
+    "width": "200"
+  },
+  {
+    "prop": "platform",
+    "label": "平台",
+    "width": "200"
+  },
+  {
+    "prop": "orderNo",
+    "label": "平台订单号",
+    "width": "250"
+  },
+  {
+    "prop": "totalAmount",
+    "label": "总金额",
+    "width": "80"
+  },
+  {
+    "prop": "status",
+    "label": "单据状态",
+    "width": "90"
+  },
+  {
+    "prop": "businessDate",
+    "label": "业务日期",
+    "width": "110"
+  },
+  {
+    "prop": "settleStatus",
+    "label": "对账状态",
+    "width": "110"
+  },
+  {
+    "prop": "settleAmount",
+    "label": "已对账金额",
+    "width": "110"
+  },
+  {
+    "prop": "unsettleAmount",
+    "label": "未对账金额",
+    "width": "110"
+  },
+  {
+    "prop": "differenceProcessingStatus",
+    "label": "差异处理状态",
+    "width": "110"
+  },
+  {
+    "prop": "differenceProcessingAmount",
+    "label": "差异处理金额",
+    "width": "110"
+  },
+  {
+    "prop": "differenceProcessingRamarks",
+    "label": "差异处理原因",
+    "width": "130"
+  },
+  {
+    "prop": "reconStatus",
+    "label": "退款状态",
+    "width": "110"
+  },
+  {
+    "prop": "unsettlementMoney",
+    "label": "未退款金额",
+    "width": "110"
+  },
+  {
+    "prop": "settlementMoney",
+    "label": "已退款金额",
+    "width": "110"
+  },
+  {
+    "prop": "orderType",
+    "label": "单据类型",
+    "width": "110",
+    "type":""
+  },
+  {
+    "prop": "orderTotalAmount",
+    "label": "订单总金额",
+    "width": "110"
+  },
+  {
+    "prop": "commission",
+    "label": "佣金",
+    "width": "110"
+  },
+  {
+    "prop": "integral",
+    "label": "积分",
+    "width": "110"
+  },
+  {
+    "prop": "platformCoupon",
+    "label": "平台优惠卷",
+    "width": "110"
+  },
+  {
+    "prop": "companyCoupon",
+    "label": "公司优惠卷",
+    "width": "110"
+  },
+  {
+    "prop": "insurance",
+    "label": "保险",
+    "width": "110"
+  },
+  {
+    "prop": "freight",
+    "label": "运费",
+    "width": "110"
+  },
+  {
+    "prop": "sellerPayment",
+    "label": "买家支付金额",
+    "width": "120"
+  }
+]

@@ -1,7 +1,7 @@
 <template>
   <footer class="templateOne">
     <ul>
-      <li v-for="lis in ul">{{lis.li}}</li>
+      <li v-for="lis in ul" :key="lis.index">{{lis.li}}</li>
     </ul>
     <p>
       Copyright © {{author}} - 2016 All rights reserved
