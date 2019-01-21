@@ -295,19 +295,19 @@ header{
 }
 .tags li a{
   display: block;
-  color: #409EFF;
+  color: #24292e;
   text-decoration: none;
 }
 /*关闭标签按钮*/
 .tag-close-box .el-dropdown span{
-  color: #409EFF;
+  color: #24292e;
   cursor: pointer;
   font-size: 14px;
   margin-right: 10px;
 }
 /*选中状态*/
 .tags li.active{
-  background: #409EFF;
+  background: #24292e;
 }
 .tags li.active a{
   color: #fff;
@@ -328,13 +328,13 @@ header{
 
 }
 .tag_delete:hover{
-  background: #409EFF;
+  background: #24292e;
   color: #fff;
 
 }
 .tags .active .tag_delete:hover {
   background: #fff;
-  color: #409EFF;
+  color: #24292e;
 }
 
 /*****CHART系统首页*****/
