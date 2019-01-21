@@ -18,7 +18,4 @@ export default {
 
 <style>
   @import './style/main.css';
-   #nprogress .bar {
-      background: #000 !important; 
-    }
 </style>
