@@ -132,6 +132,6 @@
     text-align: center;
     background: #fff;
     border-radius: 50%;
-    color: #428BCA;
+    color: #24292e;
   }
 </style>

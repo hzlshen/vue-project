@@ -3,7 +3,7 @@
       <el-menu
         :collapse="collapse"
         class="el-menu-vertical-demo"
-        background-color="#428BCA"
+        background-color="#24292e"
         text-color="#fff"
         active-text-color="#fff"
         unique-opened router>

@@ -117,7 +117,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    background: #428BCA;
+    background: #24292e;
   }
   .loginForm{
     position: absolute;
