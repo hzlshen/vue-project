@@ -1,9 +1,9 @@
 <template>
   <div>
     <el-dialog
-      title="提示"
+      :title="title"
       :visible.sync="dialogVisible"
-      width="30%"
+      :width="width"
       :before-close="handleClose">
       <span>这是一段信息</span>
       <span slot="footer" class="dialog-footer">
@@ -17,6 +17,20 @@
 <script>
 export default {
   name: "hzl-dialog",
+  props: {
+    title: {
+      type: [String],
+      default: "提示"
+    },
+    width: {
+      type:[String],
+      default: "40%"   
+    },
+    dialogVisible: {
+      type: Boolean,
+      default: false
+    }
+  }, 
   data() {
     return {
       dialogVisible: false
