@@ -1,5 +1,5 @@
 export const h = {
-  system: "Vue+Element后台管理系统",
+  system: "Vue后台管理系统",
   full: "全屏显示",
   account: "我的账户",
   invoice: "原始单据",
