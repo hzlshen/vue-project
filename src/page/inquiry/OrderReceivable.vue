@@ -60,17 +60,7 @@
         </template>
       </div>
       <template>
-        <div class="pagination">
-          <el-pagination
-            @size-change="handleSizeChange"
-            @current-change="handleCurrentChange"
-            :current-page="currentPage4"
-            :page-sizes="[100, 200, 300, 400]"
-            :page-size="100"
-            layout="total, sizes, prev, pager, next, jumper"
-            :total="400">
-          </el-pagination>
-        </div>
+        <hzl-page></hzl-page>
       </template>
 
     </div>
@@ -106,38 +96,6 @@
               btnInfo:[],
               message: '',
               currentPage4: 4,
-              treeData: {
-                name: 'My Tree',
-                children: [
-                  { name: 'hello' },
-                  { name: 'wat' },
-                  {
-                    name: 'child folder',
-                    children: [
-                      {
-                        name: 'child folder',
-                        children: [
-                          { name: 'hello' },
-                          { name: 'wat' ,
-                            children: [
-                              { name: 'wwww' },
-                              { name: 'eeee' }
-                            ]}
-                        ]
-                      },
-                      { name: 'hello' },
-                      { name: 'wat' },
-                      {
-                        name: 'child folder',
-                        children: [
-                          { name: 'hello' },
-                          { name: 'wat' }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              }
             }
         },
         computed: {
