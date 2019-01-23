@@ -71,7 +71,7 @@
         </el-pagination>
       </div>
     </template>
-    <hzl-dialog :dialog="dialog"></hzl-dialog>
+    <hzl-dialog :show="model"></hzl-dialog>
   </div>
 
 </template>
@@ -81,7 +81,7 @@
     name: "platformSetup",
     data() {
       return {
-        dialog: false,
+        model: false,
         // selectedId: '',//选中的id
         inputValue: '',
         dataPlatform: [
@@ -125,7 +125,7 @@
       },
       //修改
       modify(){
-        this.dialog = true;
+        this.model = true;
       },
       //查询
       searchClick: function() {
