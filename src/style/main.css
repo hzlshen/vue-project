@@ -80,12 +80,6 @@ ul{
 .container .el-dropdown{
   padding:0 8px;
 }
-/*.container .el-row .el-button-group .el-button{*/
-  /*padding:5px;*/
-/*}*/
-/*.container .el-pagination{*/
-  /*margin-top:10px;*/
-/*}*/
 .container .el-tabs{
   padding-left: 0;
   padding-right: 0;
@@ -406,24 +400,4 @@ table .el-button+.el-button{
 .el-menu-item i{
   color: #fff!important;
 }
-
-/*transactionFlow交易流水*/
-
-/*systemStatement系统对账单*/
-
-/*bankFlow银行流水*/
-
-/***** VERIFY_PLATFORM对账平台 *****/
-
-/*verifyReceivables收款对账*/
-
-/*verifyBankStatement银行对账*/
-
-
-/*****VERIFY_RECORD对账记录*****/
-/*verifyReceivablesRecord 对账记录收款对账*/
-
-
-/*verifyBankStatementRecord对账记录银行对账*/
-
 
