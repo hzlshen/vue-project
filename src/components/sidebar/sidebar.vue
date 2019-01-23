@@ -139,11 +139,7 @@
                     {
                       index:'/UpdatePWD',
                       title:'修改密码'
-                    },
-                    {
-                      index:'13',
-                      title:'系统设置'
-                    },
+                    }
                   ]
                 },
               ]
