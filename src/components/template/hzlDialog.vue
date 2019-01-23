@@ -2,13 +2,13 @@
   <div>
     <el-dialog
       :title="title"
-      :visible.sync="dialogVisible"
+      :visible.sync="dialog"
       :width="width"
       :before-close="handleClose">
       <span>这是一段信息</span>
       <span slot="footer" class="dialog-footer">
-        <el-button @click="dialogVisible = false">取 消</el-button>
-        <el-button type="primary" @click="dialogVisible = false">确 定</el-button>
+        <el-button @click="dialog = false">取 消</el-button>
+        <el-button type="primary" @click="dialog = false">确 定</el-button>
       </span>
     </el-dialog>
   </div>
@@ -26,19 +26,19 @@ export default {
       type:[String],
       default: "40%"   
     },
-    dialogVisible: {
+    dialog: {
       type: Boolean,
       default: false
     }
   }, 
   data() {
     return {
-      dialogVisible: false
+      dialog: false
     }
   },
   methods: {
     handleClose() {
-      this.dialogVisible = false;
+      this.dialog = false;
     }
   },
   mounted() {
