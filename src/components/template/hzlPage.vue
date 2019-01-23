@@ -21,11 +21,15 @@ export default {
   props: {
     currentPage: {
       type: [String,Number],
-      default: "1"
+      default: 1
     },
     pageSize: {
       type: [String, Number],
-      default: "20"
+      default: 20
+    },
+    total: {
+      type: [String , Number],
+      default: 50
     }
   },
   methods: {
