@@ -15,6 +15,8 @@
         :width="item.width"
         :type="item.type"
         >
+        <!-- :formatter="formatter" -->
+        <!-- formatter的用法：需要在每个col里添加formatter,push方法进去 对数据进行格式化 -->
       </el-table-column>
     </el-table>  
   </div>  
@@ -54,6 +56,9 @@ export default {
     },
     handleSelectionChange() {
     },
+    // formatter(row) {
+    //   console.log(row);
+    // }
   }
 }
 </script>
