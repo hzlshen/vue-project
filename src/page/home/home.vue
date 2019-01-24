@@ -45,9 +45,6 @@
 //          }
       },
       methods:{
-//        increment(){
-//          this.$store.dispatch('ADD');
-//        }
       }
     }
 </script>
