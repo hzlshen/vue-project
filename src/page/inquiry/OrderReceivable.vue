@@ -1,5 +1,5 @@
 <template>
-    <div class="bill">
+    <div class="bill" v-once>
       <div class="head_search">
         <h3 class="head_title">订单应收</h3>
         <!-- 传回父组件 -->
