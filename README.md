@@ -1,7 +1,8 @@
 
+
 #基于vue-cli构建的财务后台管理系统(`vue2`+`vuex`+`axios`+`vue-router`+`element-ui`+`echarts`+`websocket`+`vue-i18n`)
 
-## 注意：当前代码为vue-cli2.0搭建的程序
+[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 
 -------
